@@ -1,0 +1,7 @@
+# sudo -H cp remove_whitespace /usr/local/bin
+
+sed -E 's/^[ \t]{4}//' input > output       # Mac OS X, FreeBSD
+sed -r -i "s/^[ \t]{4}//" input > output    # GNU sed
+
+# s is substitution
+echo day | sed s/day/night/ 

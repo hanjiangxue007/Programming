@@ -1,0 +1,13 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-14
+
+1. error:
+Error: Cowardly refusing to `sudo brew install`
+
+solution:
+sudo chown root /usr/local/bin/brew
+
+
+
+2. to install gnuplot for octave
+brew install gnuplot --with-aquaterm --with-qt4

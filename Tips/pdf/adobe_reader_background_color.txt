@@ -1,0 +1,9 @@
+# Author  : Bhishan Poudel
+# Date    : May 03, 2016
+
+To change background color in adobe pdf reader
+===============================================================================
+
+1) Open Adobe Reader. Go to Edit - Preferences - Accessibility.
+2) Make sure the "Replace Document Colors" is checked and click on Custom Color.
+3) Page background: R=230 G=230 B =255     Text: black

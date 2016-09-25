@@ -1,0 +1,21 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 22, 2016
+# Ref     : https://unix.stackexchange.com/questions/25173/how-can-i-wrap-text-at-a-certain-column-size
+# Ref     : http://pubs.opengroup.org/onlinepubs/9699919799/utilities/fold.html
+
+To fold text around 80 character lengths
+===============================================================================
+
+fold -sw 80 input.txt    or,
+fmt -sw 80 input.txt
+
+    -w tells the width of the text, where 80 is standard.
+    -s tells to break at spaces, and not in words.
+
+
+
+# example 2
+# prepending < and a space in beginning of everyline and 80 char long:(as in emails)
+fold -s -w 78 input.txt | sed 's/^.*$/> &/' > output.txt
+
+

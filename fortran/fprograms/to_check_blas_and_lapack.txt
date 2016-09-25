@@ -1,0 +1,7 @@
+# Author : Bhishan Poudel
+# Date   : Sep 14, 2016
+
+To check libraries lapack and blas
+##==============================================================================
+
+f90 -o hello hello.f90 -L/usr/local/lib -llapack -lblas

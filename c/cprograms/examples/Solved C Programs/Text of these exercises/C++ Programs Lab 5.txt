@@ -1,0 +1,470 @@
+/*1.	Write a C program to calculate factorial of user inputed number by using function.*/
+#include<stdio.h>
+#include<conio.h>
+long int factorial(int);
+main()
+{
+	int n;
+	long int f;
+	printf("\nEnter a number ");
+	scanf("%d",&n);
+	f=factorial(n);
+	printf("\nthe factorial value=%ld",f);
+	getch();
+}
+long int factorial(int n)
+{
+	int i;
+	long int f;
+	f=1;
+	for(i=n;i>=1;i--)
+	{
+		f=f*i;
+	}
+	return(f);
+}
+..............................................................................................................................................................................
+/*3.	Write a C program to calculate factorial upto user input number by using function.*/
+#include<stdio.h>
+#include<conio.h>
+long int factorial(int);
+main()
+{
+	int n,i;
+	long int f;
+	printf("\nEnter a number ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		f=factorial(i);
+		printf("\nthe factorial value of %d =%ld",i,f);
+	}
+	getch();
+}
+long int factorial(int n)
+{
+	int i;
+	long int f;
+	f=1;
+	for(i=n;i>=1;i--)
+	{
+		f=f*i;
+	}
+	return(f);
+}
+
+..............................................................................................................................................................................
+/*4.	Write a C program to pass out number of elements and sort them in ascending order by using function.*/
+#include<stdio.h>
+#include<conio.h>
+#define N 1000
+void sort(int[],int);
+main()
+{
+	int num[N],n,i;
+	printf("\nEnter the value of 'n' ");
+	scanf("%d",&n);
+	printf("\nEnter different number ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	//code to call function
+	sort(num,n);
+	//display in ascending order
+	printf("\nThe numbers in ascending order ");
+	for(i=0;i<n;i++)
+	{
+		printf("  %d",num[i]);
+	}
+	getch();
+}
+void sort(int x[N],int n)
+{
+	int i,j,t;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-1;j++)
+		{
+			if(x[j]>x[j+1])
+			{
+				t=x[j];
+				x[j]=x[j+1];
+				x[j+1]=t;
+			}
+		}
+	}
+}
+
+..............................................................................................................................................................................
+/*5.	Write a C program to check user input number is even or odd by using function.*/
+#include<stdio.h>
+#include<conio.h>
+int evenodd(int);
+main()
+{
+	int n,ans;
+	printf("\nEnter a number ");
+	scanf("%d",&n);
+	ans=evenodd(n);
+	if(ans==0)
+	{
+		printf("\n%d is even number",n);
+	}
+	else
+	{
+		printf("\n%d is odd number",n);
+	}
+	getch();
+}
+int evenodd(int n)
+{
+	int r;
+	r=n%2;
+	if(r==0)
+	{
+		return (0);
+	}
+	else
+	{
+		return(1);
+	}
+}
+
+..............................................................................................................................................................................
+/*6.	Write a C program to compound interest by using function.*/
+#include<stdio.h>
+#include<conio.h>
+float compoundinterest(float,float,float);
+main()
+{
+	float p,t,r,ci;
+	printf("\nEnter the principle amount ");
+	scanf("%f",&p);
+	printf("\nEnter the time ");
+	scanf("%f",&t);
+	printf("\nEnter the rate of interest ");
+	scanf("%f",&r); 
+	ci=compoundinterest(p,t,r);
+	printf("\nThe compound interest=Rs. %.2f",ci);
+	getch();
+}
+float compoundinterest(float p,float t,float r)
+{
+	float amt;
+	
+	
+	return(amt);
+}
+
+..............................................................................................................................................................................
+/*7.	Write a C program to calculate sum of even numbers by using recursion.*/
+#include<stdio.h>
+#include<conio.h>
+long int sumofeven(int);
+main()
+{
+	int n;
+	long int s;
+	printf("\nEnter last number of the series ");
+	scanf("%d",&n);
+	s=sumofeven(n);
+	printf("\nthe sum of even numbers upto %d  = %ld",n,s);
+	getch();
+}
+long int sumofeven(int n)
+{
+	
+	long int ans;
+	int i;
+	if(n%2==1)
+	{
+    n=n-1;
+}
+	if(n<=0)
+	{
+		ans=0;
+	}
+	else
+	{
+		ans=n+sumofeven(n-2);
+	}
+	return(ans);
+}
+
+..............................................................................................................................................................................
+/*8.	Write a C program to read N numbers and calculate sum of even numbers and sum of odd numbers by using function.*/
+#include<stdio.h>
+#include<conio.h>
+#define N 500
+int sumofeven(int [],int);
+int sumofodd(int [],int);
+main()
+{
+	int i,num[N],sum1,sum2,n;
+	printf("Enter the value of 'n'  ");
+	scanf("%d",&n);
+	printf("\nEnter any %d numbers ",n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	sum1=sumofeven(num,n);
+	sum2=sumofodd(num,n);
+	printf("\nThe sum of even numbers=%d",sum1);
+	printf("\nthe sum of odd numbers=%d",sum2);
+	getch();
+}
+int sumofeven(int x[N],int n)
+{
+	int i,s=0;
+	for(i=0;i<n;i++)
+	{
+		if(x[i]%2==0)
+		{
+			s=s+x[i];
+		}
+	}
+	return(s);
+}
+int sumofodd(int x[N],int n)
+{
+	int i,s=0;
+	for(i=0;i<n;i++)
+	{
+		if(x[i]%2==1)
+		{
+			s=s+x[i];
+		}
+	}
+	return(s);
+}
+
+..............................................................................................................................................................................
+/*9.	Write a recursive C program to calculate sum of odd numbers upto N.*/
+#include<stdio.h>
+#include<conio.h>
+long int sumofodd(int);
+main()
+{
+	int n;
+	long int s;
+	printf("\nEnter last number of the series ");
+	scanf("%d",&n);
+	s=sumofodd(n);
+	printf("\nthe sum of even numbers upto %d  = %ld",n,s);
+	getch();
+}
+long int sumofodd(int n)
+{
+	
+	long int ans;
+	int i;
+	if(n%2==0)
+	{
+              n=n-1;
+}
+	if(n<=0)
+	{
+		ans=0;
+	}
+	else
+	{
+		ans=n+sumofodd(n-2);
+	}
+	return(ans);
+}
+
+..............................................................................................................................................................................
+/*10.	Write a C program to print series 1, 4, 9, …  upto N by using function.*/
+#include<stdio.h>
+#include<conio.h>
+void series(int);
+main()
+{
+	int n;
+	long int f;
+	printf("\nEnter a number ");
+	scanf("%d",&n);
+	printf("\nThe required series is ");
+	series(n);
+	getch();
+}
+void series(int n)
+{
+	int i;
+	for(i=1;i<=n;i=i+4)
+	{
+		printf("%d\t",i);
+	}
+}
+
+..............................................................................................................................................................................
+/*11.	Write a C program to calculate HCF / GCD of 3 user inputed numbers by using function.*/
+#include<stdio.h>
+#include<conio.h>
+int HCF(int,int,int);
+main()
+{
+	int n1,n2,n3,ans;
+	printf("\nEnter first number ");
+	scanf("%d",&n1);
+	printf("\nEnter second number ");
+	scanf("%d",&n2);
+	printf("\nEnter third number ");
+	scanf("%d",&n3);
+	ans=HCF(n1,n2,n3);
+	printf("\nthe HCF/GCD of given numbers=%d",ans);
+	getch();
+}
+int HCF(int a,int b,int c)
+{
+	int i,r1,r2,r3,ans,smallest;
+	if(a<b && a<c)
+	{
+		smallest=a;
+	}
+	else if(b<a&& b<c)
+	{
+		smallest=b;
+	}
+	else
+	{
+		smallest=c;
+	}
+	for(i=1;i<=smallest;i++)
+	{
+		r1=a%i;
+		r2=b%i;
+		r3=c%i;
+		if(r1==0&&r2==0&&r3==0)
+		{
+			ans=i;
+		}
+	}
+	return(ans);
+}
+
+..............................................................................................................................................................................
+/*12.	Write a C program to to calculate LCM of user inputed three numbers by using function.*/
+#include<stdio.h>
+#include<conio.h>
+int LCM(int,int,int);
+main()
+{
+	int n1,n2,n3,ans;
+	printf("\nEnter first number ");
+	scanf("%d",&n1);
+	printf("\nEnter second number ");
+	scanf("%d",&n2);
+	printf("\nEnter third number ");
+	scanf("%d",&n3);
+	ans=LCM(n1,n2,n3);
+	printf("\nthe LCM of given numbers=%d",ans);
+	getch();
+}
+int LCM(int a,int b,int c)
+{
+	int i,r1,r2,r3,ans,x,smallest;
+	if(a<b && a<c)
+	{
+		smallest=a;
+	}
+	else if(b<a&& b<c)
+	{
+		smallest=b;
+	}
+	else
+	{
+		smallest=c;
+	}
+	x=a*b*c;
+	for(i=x;i>=1;i--)
+	{
+		r1=i%a;
+		r2=i%b;
+		r3=i%c;
+		if(r1==0&&r2==0&&r3==0)
+		{
+			ans=i;
+		}
+	}
+	return(ans);
+}
+
+..............................................................................................................................................................................
+/*13.	Write a C program to find area of right angle triangle whose height and base are input by user also using function.*/
+#include<stdio.h>
+#include<conio.h>
+float areaoftriangle(float ,float);
+main()
+{
+	float h,b,a;
+	printf("\nEnter the height of triangle ");
+	scanf("%f",&h);
+	printf("\nEnter the base of triangle ");
+	scanf("%f",&b);
+	a=areaoftriangle(h,b);
+	printf("\nthe area of triangle=%f",a);
+	getch();
+}
+float areaoftriangle(float h,float b)
+{
+	float a;
+	a=0.5*b*h;
+	return (a);
+}
+
+..............................................................................................................................................................................
+/*14.	Write a C program to find area of triangle whose 3 sides are input by user. [Hint: area = sqrt(s*(s-a)(s-b)(s-c)), 
+where s = (a+b+c)/2 ]*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+float areaoftriangle(float ,float,float);
+main()
+{
+	float side1,side2,side3,a;
+	printf("\nEnter the length of the first side of triangle ");
+	scanf("%f",&side1);
+	printf("\nEnter the length of the second side of triangle ");
+	scanf("%f",&side2);
+	printf("\nEnter the length of the third side of triangle ");
+	scanf("%f",&side3);
+	a=areaoftriangle(side1,side2,side3);
+	printf("\nthe area of triangle=%f",a);
+	getch();
+}
+float areaoftriangle(float a,float b,float c)
+{
+	float s,ar;
+	s=(a+b+c)/2;
+	ar=sqrt(s*(s-a)*(s-b)*(s-c));
+	return (ar);
+}
+
+..............................................................................................................................................................................
+/*15.	Write a C program to read two equation ax2+bx+c = 0 and dx2+ex+f=0 and sum them by using function.*/
+#include<stdio.h>
+#include<conio.h>
+void equation_adder(int, int, int, int, int, int);
+main()
+{
+int a,b,c,d,e,f;
+printf("\nEnter values of a, b, c for first equation ax^2+bx+c=0 : ");
+scanf("%d %d %d", &a, &b, &c);
+printf("\nEnter values of d, e, f for second equation dx^2+ex+f=0 : ");
+scanf("%d %d %d", &d, &e, &f);
+equation_adder(a, b, c, d, e, f);
+getch();
+}
+void equation_adder(int p, int q, int r, int s, int t, int u)
+{
+int x, y, z;
+x = p + s;
+y = q + t;
+z = r + u;
+printf("\nThe addition of %dx^2+%dx+%d = 0 and %dx^2+%dx+%d = 0 is %dx^2=%dx+%d = 0",p,q,r,s,t,u,x,y,z);
+}
+
+..............................................................................................................................................................................

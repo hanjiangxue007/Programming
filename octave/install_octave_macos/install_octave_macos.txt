@@ -1,0 +1,55 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-14
+# Ref       : http://wiki.octave.org/Octave_for_MacOS_X#Using_Aquaterm_with_Gnuplot
+
+To install octave in macos osx 10.9
+====================================
+
+
+
+
+1. download binaries and install them
+======================================
+http://wiki.octave.org/Octave_for_MacOS_X
+
+
+download these files:
+
+download Octave 4.0.2 with graphical user interface (OS X 10.9+),
+download Octave 4.0.2 with command line interface (OS X 10.9+)
+
+
+
+
+2. download aquaterm for gnuplot terminal for octave
+====================================================
+https://sourceforge.net/projects/aquaterm/
+
+
+
+3. for error:
+=============
+gnuplot> set terminal aqua enhanced title "Figure 1" size 560 420  font "*,6" dashlength 1
+
+
+brew install gnuplot
+and then install again
+
+sudo chown root /usr/local/bin/brew
+
+brew install gnuplot --with-aquaterm 
+
+4. set terminal in ~/.octaverc
+===============================
+setenv("GNUTERM","X11")
+
+
+
+5. execute octave script in geany
+===================================
+Build> Set build commands
+Execute = clear; /usr/local/octave/3.8.0/bin/octave '%f'
+
+
+
+

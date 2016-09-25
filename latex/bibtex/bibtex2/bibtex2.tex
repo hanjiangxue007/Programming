@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{natbib}
+\def\citeapos#1{\citeauthor{#1}'s (\citeyear{#1})}
+
+\begin{document}
+
+\title{BibTeX in action}
+\author{Martin J. Osborne}
+\date{2008-1-13}
+
+\maketitle
+
+\section{Introduction}
+This document illustrates the use of BibTeX\@.  You may want to refer to
+\cite{ahu61}
+ or \cite{ab94} or \cite{m85}.  Or you may want to cite a
+specific page in a reference, like this: see \citet[p.~199]{m85}.  Or
+perhaps you want to cite more than one paper by Maskin: \cite{m85, m99}.
+Or you want to make a parenthetical reference to one or more articles, in which case the \verb+\citealt+ command omits the parentheses around the year (\citealt{ahu61}).
+
+\citet{ahu61}	\\            % Jones et al. (1990)
+\citet*{ahu61} \\	          % Jones, Baker, and Smith (1990)
+\citep{ahu61}	 \\           % (Jones et al. 1990)
+\citep*{ahu61}	\\            % (Jones, Baker, and Smith 1990)
+\citep[p.~99]{ahu61} \\	      % (Jones et al., 1990, p. 99)
+\citep[e.g.][]{ahu61}	\\    % (e.g. Jones et al., 1990)
+\citep[e.g.][p.~99]{ahu61} \\ % (e.g. Jones et al., 1990, p. 99)
+\citeauthor{ahu61} \\	      % Jones et al.
+\citeauthor*{ahu61} \\	      % Jones, Baker, and Smith
+\citeyear{ahu61} \\           % 1990
+\citeapos{ahu61}*	 \\       % Jones et al.'s (1990)
+
+
+
+
+
+\bibliographystyle{te}  % needs te.bst file
+\bibliography{bibtex2}  % name of bib file
+
+
+\end{document}

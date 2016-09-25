@@ -1,0 +1,20 @@
+bhishan tips:
+to install skype in ubuntu 14.04 64 bit
+========================================
+reference: http://community.skype.com/t5/Linux/Ubuntu-14-04-LTS-64-bit-amp-Skype/td-p/3684533
+
+1. first remove any old files:
+
+sudo apt-get remove skype skype-bin
+rm -rf ~/.skype
+
+2. Enable canonical partners repository
+
+go to Software Center
+Edit > Software Sources > Ubuntu Software > check on Canonical supported
+
+also, Other Software > Canonical Partners (both)
+
+
+3. install skpye
+sudo apt-get update; sudo apt-get install skype

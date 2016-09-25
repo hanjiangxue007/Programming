@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Question 1: }{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}part a: }{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}part b: }{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}part c: }{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}part d: }{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}part e: }{2}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}part f: }{2}{subsection.1.6}
+\contentsline {section}{\numberline {2}Question 2: }{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}part a: }{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}part b: }{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}part c: }{3}{subsection.2.3}

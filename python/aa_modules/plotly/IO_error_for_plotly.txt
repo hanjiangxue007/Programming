@@ -1,0 +1,26 @@
+Author: Bhishan Poudel
+Date  : July 3, 2016
+Ref   : http://stackoverflow.com/questions/36917608/plotly-installation-difference-from-python-plotly-and-pip-install-plotly-debian
+
+Plotly IO error for offline plotly
+-------------------------------------
+
+error:
+IOError: [Errno 2] No such file or directory: '/usr/lib/python2.7/dist-packages/plotly/offline/plotly.min.js'
+
+
+ls /usr/lib/python2.7/dist-packages/plotly/offline/plotly.min.js:
+__init__.py  __init__.pyc  offline.py  offline.pyc
+
+
+
+Solution:
+I had installed plotly from Synaptic Manager,
+installing from pip solved the problem:
+
+pip install plotly  ( as far as pip works, do not use sudo pip)
+
+
+
+ 
+

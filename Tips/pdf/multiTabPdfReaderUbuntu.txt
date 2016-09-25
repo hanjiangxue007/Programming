@@ -1,0 +1,12 @@
+Bhishan Poudel
+Jan 30, 2016
+
+Multitab pdf reader for ubuntu
+==============================
+
+1. foxit reader
+download from website
+https://www.foxitsoftware.com/company/press.php?action=view&page=20094216780.html
+
+2. pdfview
+sudo apt-get install qpdfview

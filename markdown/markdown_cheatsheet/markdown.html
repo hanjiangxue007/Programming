@@ -1,0 +1,425 @@
+<h1 id="typography">Typography</h1>
+<h2 id="headings">Headings</h2>
+<p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># h1 Heading</span>
+<span class="fu">## h2 Heading</span>
+<span class="fu">### h3 Heading</span>
+<span class="fu">#### h4 Heading</span>
+<span class="fu">##### h5 Heading</span>
+<span class="fu">###### h6 Heading</span></code></pre></div>
+<p>Renders to:</p>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<p>HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;h1&gt;</span>h1 Heading<span class="kw">&lt;/h1&gt;</span>
+<span class="kw">&lt;h2&gt;</span>h2 Heading<span class="kw">&lt;/h2&gt;</span>
+<span class="kw">&lt;h3&gt;</span>h3 Heading<span class="kw">&lt;/h3&gt;</span>
+<span class="kw">&lt;h4&gt;</span>h4 Heading<span class="kw">&lt;/h4&gt;</span>
+<span class="kw">&lt;h5&gt;</span>h5 Heading<span class="kw">&lt;/h5&gt;</span>
+<span class="kw">&lt;h6&gt;</span>h6 Heading<span class="kw">&lt;/h6&gt;</span></code></pre></div>
+<p><br> <br> <br></p>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a &quot;thematic break&quot; between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+<ul>
+<li><code>___</code>: three consecutive underscores</li>
+<li><code>---</code>: three consecutive dashes</li>
+<li><code>***</code>: three consecutive asterisks</li>
+</ul>
+<p>renders to:</p>
+<hr />
+<hr />
+<hr />
+<p><br> <br> <br></p>
+<h2 id="body-copy">Body Copy</h2>
+<p>Body copy written as normal, plain text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
+<p>So this body copy:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</code></pre></div>
+<p>renders to this HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.<span class="kw">&lt;/p&gt;</span></code></pre></div>
+<p><br> <br> <br></p>
+<h2 id="emphasis">Emphasis</h2>
+<h3 id="bold">Bold</h3>
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">**rendered as bold text**</code></pre></div>
+<p>renders to:</p>
+<p><strong>rendered as bold text</strong></p>
+<p>and this HTML</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;strong&gt;</span>rendered as bold text<span class="kw">&lt;/strong&gt;</span></code></pre></div>
+<h3 id="italics">Italics</h3>
+<p>For emphasizing a snippet of text with italics.</p>
+<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">_rendered as italicized text_</code></pre></div>
+<p>renders to:</p>
+<p><em>rendered as italicized text</em></p>
+<p>and this HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;em&gt;</span>rendered as italicized text<span class="kw">&lt;/em&gt;</span></code></pre></div>
+<h3 id="strikethrough">strikethrough</h3>
+<p>In GFM you can do strickthroughs.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">~~Strike through this text.~~</code></pre></div>
+<p>Which renders to:</p>
+<p><del>Strike through this text.</del></p>
+<p><br> <br> <br></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>For quoting blocks of content from another source within your document.</p>
+<p>Add <code>&gt;</code> before any text you want to quote.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">Add <span class="bn">`&gt;`</span> before any text you want to quote. </code></pre></div>
+<p>Renders to:</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+<p>and this HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;blockquote&gt;</span>
+  <span class="kw">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;/blockquote&gt;</span></code></pre></div>
+<p>Blockquotes can also be nested:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">&gt;<span class="dt"> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. </span>
+<span class="dt">Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </span>
+<span class="dt">&gt;&gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor </span>
+<span class="dt">odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</span>
+<span class="dt">&gt;&gt;&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. </span>
+<span class="dt">Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </span></code></pre></div>
+<p>Renders to:</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. &gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam. &gt;&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+</blockquote>
+<p><br> <br> <br></p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered">Unordered</h3>
+<p>A list of items in which the order of the items does not explicitly matter.</p>
+<p>You may use any of the following symbols to denote bullets for each list item:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">* <span class="fl">valid bullet</span>
+<span class="fl">- valid bullet</span>
+<span class="fl">+ valid bullet</span></code></pre></div>
+<p>For example</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">+ <span class="fl">Lorem ipsum dolor sit amet</span>
+<span class="fl">+ Consectetur adipiscing elit</span>
+<span class="fl">+ Integer molestie lorem at massa</span>
+<span class="fl">+ Facilisis in pretium nisl aliquet</span>
+<span class="fl">+ Nulla volutpat aliquam velit</span>
+<span class="fl">  - Phasellus iaculis neque</span>
+<span class="fl">  - Purus sodales ultricies</span>
+<span class="fl">  - Vestibulum laoreet porttitor sem</span>
+<span class="fl">  - Ac tristique libero volutpat at</span>
+<span class="fl">+ Faucibus porta lacus fringilla vel</span>
+<span class="fl">+ Aenean sit amet erat nunc</span>
+<span class="fl">+ Eget porttitor lorem</span></code></pre></div>
+<p>Renders to:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+<p>And this HTML</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Consectetur adipiscing elit<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Integer molestie lorem at massa<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Nulla volutpat aliquam velit
+    <span class="kw">&lt;ul&gt;</span>
+      <span class="kw">&lt;li&gt;</span>Phasellus iaculis neque<span class="kw">&lt;/li&gt;</span>
+      <span class="kw">&lt;li&gt;</span>Purus sodales ultricies<span class="kw">&lt;/li&gt;</span>
+      <span class="kw">&lt;li&gt;</span>Vestibulum laoreet porttitor sem<span class="kw">&lt;/li&gt;</span>
+      <span class="kw">&lt;li&gt;</span>Ac tristique libero volutpat at<span class="kw">&lt;/li&gt;</span>
+    <span class="kw">&lt;/ul&gt;</span>
+  <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Faucibus porta lacus fringilla vel<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Aenean sit amet erat nunc<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Eget porttitor lorem<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre></div>
+<h3 id="ordered">Ordered</h3>
+<p>A list of items in which the order of items does explicitly matter.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">1. <span class="fl">Lorem ipsum dolor sit amet</span>
+<span class="fl">2. Consectetur adipiscing elit</span>
+<span class="fl">3. Integer molestie lorem at massa</span>
+<span class="fl">4. Facilisis in pretium nisl aliquet</span>
+<span class="fl">5. Nulla volutpat aliquam velit</span>
+<span class="fl">6. Faucibus porta lacus fringilla vel</span>
+<span class="fl">7. Aenean sit amet erat nunc</span>
+<span class="fl">8. Eget porttitor lorem</span></code></pre></div>
+<p>Renders to:</p>
+<ol style="list-style-type: decimal">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p>And this HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ol&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Consectetur adipiscing elit<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Integer molestie lorem at massa<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Nulla volutpat aliquam velit<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Faucibus porta lacus fringilla vel<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Aenean sit amet erat nunc<span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span>Eget porttitor lorem<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ol&gt;</span></code></pre></div>
+<p><strong>TIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">1. <span class="fl">Lorem ipsum dolor sit amet</span>
+<span class="fl">1. Consectetur adipiscing elit</span>
+<span class="fl">1. Integer molestie lorem at massa</span>
+<span class="fl">1. Facilisis in pretium nisl aliquet</span>
+<span class="fl">1. Nulla volutpat aliquam velit</span>
+<span class="fl">1. Faucibus porta lacus fringilla vel</span>
+<span class="fl">1. Aenean sit amet erat nunc</span>
+<span class="fl">1. Eget porttitor lorem</span></code></pre></div>
+<p>Renders to:</p>
+<ol style="list-style-type: decimal">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p><br> <br> <br></p>
+<h2 id="code">Code</h2>
+<h3 id="inline-code">Inline code</h3>
+<p>Wrap inline snippets of code with <code>`</code>.</p>
+<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as &quot;inline&quot;.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">For example, `<span class="kw">&lt;section&gt;&lt;/section&gt;</span>` should be wrapped as &quot;inline&quot;.</code></pre></div>
+<h3 id="indented-code">Indented code</h3>
+<p>Or indent several lines of code by at least four spaces, as in:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript">    <span class="co">// Some comments</span>
+    line <span class="dv">1</span> of code
+    line <span class="dv">2</span> of code
+    line <span class="dv">3</span> of code</code></pre></div>
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code</code></pre>
+<h3 id="block-code-fences">Block code &quot;fences&quot;</h3>
+<p>Use &quot;fences&quot; <code>```</code> to block in multiple lines of code.</p>
+<pre>
+``` html
+Sample text here...
+```
+</pre>
+<pre><code>Sample text here...</code></pre>
+<p>HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;pre&gt;</span>
+  <span class="kw">&lt;p&gt;</span>Sample text here...<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;/pre&gt;</span></code></pre></div>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<p>GFM, or &quot;GitHub Flavored Markdown&quot; also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code &quot;fence&quot;, <code>``` js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
+<pre>
+``` javascript
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: 'docs/assets',
+      data: 'src/data/*.{json,yml}',
+      helpers: 'src/custom-helpers.js',
+      partials: ['src/partials/**/*.{hbs,md}']
+    },
+    pages: {
+      options: {
+        layout: 'default.hbs'
+      },
+      files: {
+        './': ['src/templates/pages/index.hbs']
+      }
+    }
+  }
+};
+```
+</pre>
+<p>Renders to:</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="va">grunt</span>.<span class="at">initConfig</span>(<span class="op">{</span>
+  <span class="dt">assemble</span><span class="op">:</span> <span class="op">{</span>
+    <span class="dt">options</span><span class="op">:</span> <span class="op">{</span>
+      <span class="dt">assets</span><span class="op">:</span> <span class="st">&#39;docs/assets&#39;</span><span class="op">,</span>
+      <span class="dt">data</span><span class="op">:</span> <span class="st">&#39;src/data/*.{json,yml}&#39;</span><span class="op">,</span>
+      <span class="dt">helpers</span><span class="op">:</span> <span class="st">&#39;src/custom-helpers.js&#39;</span><span class="op">,</span>
+      <span class="dt">partials</span><span class="op">:</span> [<span class="st">&#39;src/partials/**/*.{hbs,md}&#39;</span>]
+    <span class="op">},</span>
+    <span class="dt">pages</span><span class="op">:</span> <span class="op">{</span>
+      <span class="dt">options</span><span class="op">:</span> <span class="op">{</span>
+        <span class="dt">layout</span><span class="op">:</span> <span class="st">&#39;default.hbs&#39;</span>
+      <span class="op">},</span>
+      <span class="dt">files</span><span class="op">:</span> <span class="op">{</span>
+        <span class="st">&#39;./&#39;</span><span class="op">:</span> [<span class="st">&#39;src/templates/pages/index.hbs&#39;</span>]
+      <span class="op">}</span>
+    <span class="op">}</span>
+  <span class="op">}</span>
+<span class="op">};</span></code></pre></div>
+<p>And this complicated HTML:</p>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;highlight&quot;</span><span class="kw">&gt;&lt;pre&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>grunt<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>.<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>initConfig<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>({<span class="kw">&lt;/span&gt;</span>
+  <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>assemble<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>{<span class="kw">&lt;/span&gt;</span>
+    <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>options<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>{<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>assets<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;docs/assets&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>,<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>data<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;src/data/*.{json,yml}&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>,<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>helpers<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;src/custom-helpers.js&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>,<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>partials<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>[<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;src/partials/**/*.{hbs,md}&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>]<span class="kw">&lt;/span&gt;</span>
+    <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>},<span class="kw">&lt;/span&gt;</span>
+    <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>pages<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>{<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>options<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>{<span class="kw">&lt;/span&gt;</span>
+        <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>layout<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;default.hbs&#39;<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>},<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nx&quot;</span><span class="kw">&gt;</span>files<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>{<span class="kw">&lt;/span&gt;</span>
+        <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;./&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;o&quot;</span><span class="kw">&gt;</span>:<span class="kw">&lt;/span&gt;</span> <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>[<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;s1&quot;</span><span class="kw">&gt;</span>&#39;src/templates/pages/index.hbs&#39;<span class="kw">&lt;/span&gt;&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>]<span class="kw">&lt;/span&gt;</span>
+      <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>}<span class="kw">&lt;/span&gt;</span>
+    <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>}<span class="kw">&lt;/span&gt;</span>
+  <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>}<span class="kw">&lt;/span&gt;</span>
+<span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;p&quot;</span><span class="kw">&gt;</span>};<span class="kw">&lt;/span&gt;</span>
+<span class="kw">&lt;/pre&gt;&lt;/div&gt;</span></code></pre></div>
+<p><br> <br> <br></p>
+<h2 id="tables">Tables</h2>
+<p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |</code></pre></div>
+<p>Renders to:</p>
+<table style="width:26%;">
+<colgroup>
+<col width="9%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr class="even">
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr class="odd">
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>And this HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;table&gt;</span>
+  <span class="kw">&lt;tr&gt;</span>
+    <span class="kw">&lt;th&gt;</span>Option<span class="kw">&lt;/th&gt;</span>
+    <span class="kw">&lt;th&gt;</span>Description<span class="kw">&lt;/th&gt;</span>
+  <span class="kw">&lt;/tr&gt;</span>
+  <span class="kw">&lt;tr&gt;</span>
+    <span class="kw">&lt;td&gt;</span>data<span class="kw">&lt;/td&gt;</span>
+    <span class="kw">&lt;td&gt;</span>path to data files to supply the data that will be passed into templates.<span class="kw">&lt;/td&gt;</span>
+  <span class="kw">&lt;/tr&gt;</span>
+  <span class="kw">&lt;tr&gt;</span>
+    <span class="kw">&lt;td&gt;</span>engine<span class="kw">&lt;/td&gt;</span>
+    <span class="kw">&lt;td&gt;</span>engine to be used for processing templates. Handlebars is the default.<span class="kw">&lt;/td&gt;</span>
+  <span class="kw">&lt;/tr&gt;</span>
+  <span class="kw">&lt;tr&gt;</span>
+    <span class="kw">&lt;td&gt;</span>ext<span class="kw">&lt;/td&gt;</span>
+    <span class="kw">&lt;td&gt;</span>extension to be used for dest files.<span class="kw">&lt;/td&gt;</span>
+  <span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span></code></pre></div>
+<h3 id="right-aligned-text">Right aligned text</h3>
+<p>Adding a colon on the right side of the dashes below any heading will right align text for that column.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |</code></pre></div>
+<table style="width:29%;">
+<colgroup>
+<col width="11%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Option</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">data</td>
+<td align="right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr class="even">
+<td align="right">engine</td>
+<td align="right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr class="odd">
+<td align="right">ext</td>
+<td align="right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p><br> <br> <br></p>
+<h2 id="links">Links</h2>
+<h3 id="basic-link">Basic link</h3>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="ot">[Assemble](http://assemble.io)</span></code></pre></div>
+<p>Renders to (hover over the link, there is no tooltip):</p>
+<p><a href="http://assemble.io">Assemble</a></p>
+<p>HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://assemble.io&quot;</span><span class="kw">&gt;</span>Assemble<span class="kw">&lt;/a&gt;</span></code></pre></div>
+<h3 id="add-a-title">Add a title</h3>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="ot">[Upstage](https://github.com/upstage/ &quot;Visit Upstage!&quot;)</span></code></pre></div>
+<p>Renders to (hover over the link, there should be a tooltip):</p>
+<p><a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a></p>
+<p>HTML:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://github.com/upstage/&quot;</span><span class="ot"> title=</span><span class="st">&quot;Visit Upstage!&quot;</span><span class="kw">&gt;</span>Upstage<span class="kw">&lt;/a&gt;</span></code></pre></div>
+<h3 id="named-anchors">Named Anchors</h3>
+<p>Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># Table of Contents</span>
+  * <span class="ot">[Chapter 1](#chapter-1)</span>
+  * <span class="ot">[Chapter 2](#chapter-2)</span>
+  * <span class="ot">[Chapter 3](#chapter-3)</span></code></pre></div>
+<p>will jump to these sections:</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu">## Chapter 1 &lt;a id=&quot;chapter-1&quot;&gt;&lt;/a&gt;</span>
+Content for chapter one.
+
+<span class="fu">## Chapter 2 &lt;a id=&quot;chapter-2&quot;&gt;&lt;/a&gt;</span>
+Content for chapter one.
+
+<span class="fu">## Chapter 3 &lt;a id=&quot;chapter-3&quot;&gt;&lt;/a&gt;</span>
+Content for chapter one.</code></pre></div>
+<p><strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
+<p><br> <br> <br></p>
+<h2 id="images">Images</h2>
+<p>Images have a similar syntax to links but include a preceding exclamation point.</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="al">![Minion](http://octodex.github.com/images/minion.png)</span></code></pre></div>
+<div class="figure">
+<img src="http://octodex.github.com/images/minion.png" alt="Minion" />
+<p class="caption">Minion</p>
+</div>
+<p>or</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="al">![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)</span></code></pre></div>
+<div class="figure">
+<img src="http://octodex.github.com/images/stormtroopocat.jpg" title="The Stormtroopocat" alt="Alt text" />
+<p class="caption">Alt text</p>
+</div>
+<p>Like links, Images also have a footnote style syntax</p>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="al">![Alt text][id]</span></code></pre></div>
+<div class="figure">
+<img src="http://octodex.github.com/images/dojocat.jpg" title="The Dojocat" alt="Alt text" />
+<p class="caption">Alt text</p>
+</div>
+<p>With a reference later in the document defining the URL location:</p>
+<pre><code>[id]: http://octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;</code></pre>

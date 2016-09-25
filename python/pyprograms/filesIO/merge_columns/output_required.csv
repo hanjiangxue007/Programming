@@ -1,0 +1,9 @@
+# coating file for detector A/R
+# column 1 is the angle of incidence (degrees)
+# column 2 is the wavelength (microns)
+# column 3 is the transmission probability
+# column 4 is the reflection probability
+# Version 2.0 - nm, norm@500 to 1, burrows+2006c91.21_T1350_g4.7_f100_solar
+# Wavelength(nm)  Flambda(ergs/cm^s/s/nm)
+14.2	531.0	0.0618	0.9382	1.14325276212
+14.2	532.0	0.07905	0.92095	1.14557732058

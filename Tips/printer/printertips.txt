@@ -1,0 +1,1 @@
+set printer resolution 1200 dpi 

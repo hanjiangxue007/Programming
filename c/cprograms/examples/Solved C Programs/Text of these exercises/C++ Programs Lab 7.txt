@@ -1,0 +1,131 @@
+/*1.	Write a C program to add two values by using pointer.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int x,y,sum;
+	int *a,*b;
+	printf("Enter the first number : ");
+	scanf("%d",&x);
+	printf("Enter the second number : ");
+	scanf("%d",&y);
+	a=&x;
+	b=&y;
+	sum= *a + *b;
+	printf("\n the sum of the two numbers=%d", sum);
+	getch();
+}
+.....................................................................................................................................
+/*2.	Write a C program to show pointer arithmentic.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a=10,*p1;
+	float b=10.5,*p2;
+	char c='A',*p3;
+	
+	printf("\nThe value of a=%d",a);
+	printf("\n the value of b=%f",b);
+	printf("\n the value of c=%c",c);
+	p1=&a;
+	p2=&b;
+	p3=&c;
+	printf("\n The memory address of p1 before increment=%u",p1);
+	printf("\n The memory address of p2 before increment=%u",p2);
+	printf("\n The memory address of p2 before increment=%u",p3);
+	p1++;
+	p2++;
+	p3++;
+	printf("\n************************");
+	printf("\n The memory address of p1 after increment=%u",p1);
+	printf("\n The memory address of p2 after increment=%u",p2);
+	printf("\n The memory address of p2 after increment=%u",p3);
+	getch();
+	return(0);
+}
+
+.....................................................................................................................................
+/*3.	Write a C program to swap two values by using function.*/
+#include<stdio.h>
+#include<conio.h>
+void swap(int *,int *);
+main()
+{
+	int x,y;
+	printf("Enter the first number : ");
+	scanf("%d",&x);
+	printf("Enter the second number : ");
+	scanf("%d",&y);
+	printf("\nThe value of x before swapping =%d ",x);
+	printf("\nThe value of y before swapping=%d",y);
+	//code to call function
+	swap(&x,&y);
+	printf("\nThe value of x after swapping =%d ",x);
+	printf("\nThe value of y after swapping=%d",y);
+	getch();
+}
+void swap(int *a,int *b)
+{
+	int t;
+	t=*a;
+	*a=*b;
+	*b=t;
+}
+
+.....................................................................................................................................
+/*4.	Write a C program to pass a value to a function and check it is even or odd by using pointer parameter.*/
+#include<stdio.h>
+#include<conio.h>
+char *EvenOdd(int );
+main()
+{
+	int n;
+	char *a;
+	printf("Enter a number ");
+	scanf("%d",&n);
+	a=EvenOdd(n);
+	printf("\n%s",a);
+	getch();
+}
+char *EvenOdd(int n)
+{
+	int r;
+	char *result;
+	r=n%2;
+	if(r==0)
+	{
+		result="It is even number";
+	}
+	else
+	{
+		result="It is odd number";
+	}
+	return(result);
+}
+	
+
+.....................................................................................................................................
+/*5.	Write a C program to add three numbers by using pointer.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int x,y,z,sum;
+	int *a,*b,*c;
+	printf("Enter the first number : ");
+	scanf("%d",&x);
+	printf("Enter the second number : ");
+	scanf("%d",&y);
+	printf("Enter the third number : ");
+	scanf("%d",&z);
+	a=&x;
+	b=&y;
+	c=&z;
+	sum= *a + *b + *c;
+	printf("\n the sum of the two numbers=%d", sum);
+	getch();
+}
+
+
+.....................................................................................................................................

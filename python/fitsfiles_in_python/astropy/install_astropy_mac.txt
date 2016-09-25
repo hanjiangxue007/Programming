@@ -1,0 +1,11 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 27, 2016
+
+
+before installation:
+import astropy   gives error
+
+
+to install using pip
+====================
+sudo -H pip install astropy

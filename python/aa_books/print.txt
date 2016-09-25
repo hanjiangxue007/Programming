@@ -1,0 +1,178 @@
+Reserved Words:
+###############
+And exec Not Assert finally or Break for pass Class from print Continue global raisedef if return del import try elif in while else is with except lambda yield
+
+Data Type Conversion:
+#######################
+intx[,base]	longx[,base] floats complexreal[,imag] strx reprx evalstr
+tuples lists sets diced frozen sets chrx unichrx ordx hexx octx 
+
+Types of Operator:
+##################
+Arithmetic operator 	+ - * / % ** // 
+Comparison operator 	== != <> > < <= >=
+Assignment operator 	= += -= *= /= %= **= //=
+Bitwise operator	& | ^ ~ << >>
+Membership operator	is is not
+Identity operator	is is not
+
+Operator precedence:
+####################
+
+** ~+-  */%//	+- 	>><<	&^|	<= <> >=	<> == !=
+= %= /= //= -= += *= **=
+is is not in not in not or and
+
+Loops: while loop,for loop, nested loops : break statement, continue,pass
+
+Mathematical Functions:
+#######################
+absx ceilx cmpx,y expx fabsx floorx logx log10x maxx1,x2,… minx1,x2,…
+mods pows,y roundx[,n] sqrtx
+
+Random Number Functions:
+#########################
+choiceSEQ randrange[start,]stop[,step]   random seed[x] shuffleLST unformed,Y
+
+
+Trigonometric Functions:
+#########################
+acosx asinx atanx atan2y,x cosx hypotx,y sinx tanx degreesx radianx
+
+
+Escape Characters:
+###################
+
+\a bell or alert	\b backslash	\cx or \C-x 	controls
+\e escape		\f form feed	\M-\C-x     	meta-control-x
+\n newline		\nnn octal	\r		carriage return
+\s space		\t tab		\v ver tab	\x character x
+\xnn hex notation
+
+String Special Operators:
+##########################
+
++ 	Concatenation - Adds values on either side of the operator
+* 	Repetition
+[] 	Slice - Gives the character from the given index
+[ : ] 	Range Slice - Gives the characters from the given range
+in 	Membership - Returns true if a character exists in the given string
+not 	in Membership
+r/R 	Raw String
+% 	Format - Performs String formatting
+
+String Formatting Operator:
+############################
+
+%c 	character
+%s 	string conversion via str prior to formatting%i 	signed decimal integer%d 	signed decimal integer%u 	unsigned decimal integer%o 	octal integer%x 	hexadecimal integer%X 	hexadecimal integer%e 	exponential notation%E 	exponential notation%f 	floating point real number%g 	the shorter of %f and %e%G 	the shorter of %f and %E
+
+supported symbols:
+########################
+
+* 	argument specifies width or precision- 	left justification+ 	display the sign<sp> 	leave a blank space before a positive number# 	add the octal leading zero or hexadecimal leading '0x' or '0X', depending on	whether 'x' or 'X' were used.0 	pad from left with zeros% 	'%%' leaves you with a single literal '%'var	mapping variablem.n.	m is the minimum total width and n is the number of digits to display after the	decimal point
+
+Built-in String Methods:
+##########################
+
+1 capitalizeCapitalizes first letter of string
+2 center width,fillcharReturns a space-padded string with the original string centered to a total of width columns.3 count str, beg=0,end=len(string)Counts how many times str occurs in string or in a substring of string if starting index beg and ending index end aregiven.
+
+4 decode encoding=‘ UTF-8’ errors=‘ strint’Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding.5 encode encoding=‘ UTF-8’ errors’ strict’Returns encoded string version of string; on error, default is to raise a ValueError unless errors is given with'ignore' or 'replace'.6 endswith suffix, beg=0 end=len(string)Determines if string or a substring of stringends with suffix; returns true if so and false otherwise.7 expandtabs tabsize=8Expands tabs in string to multiple spaces; defaults to 8 spaces per tab if tabsize not provided.8 find str, beg=0 end=len(string)Determine if str occurs in string or in a substring of string if starting index beg and ending index end are givenreturns index if found and -1 otherwise.9 index str beg=0 end=len(string)Same as find, but raises an exception if str not found.10 isalnum
+Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise
+
+
+11 isalpha
+Returns true if string has at least 1 character and all characters are alphabetic and false otherwise.12 isdigitReturns true if string contains only digits and false otherwise.13 islowerReturns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise.14 isnumericReturns true if a unicode string contains only numeric characters and false otherwise.15 isspaceReturns true if string contains only whitespace characters and false otherwise.16 istitle
+Returns true if string is properly "titlecased" and false otherwise.17isupperReturns true if string has at least one cased character and all cased characters are in uppercase and false otherwise.18 joinseqMerges concatenates the string representations of elements in sequence seq into a string, with separator string.19 leg string
+Returns the length of the string
+
+20 ljust width[,fillchar]Returns a space-padded string with the original string left-justified to a total of width columns.21 lowerConverts all uppercase letters in string to lowercase.22 lstripRemoves all leading whitespace in string.23 maketransReturns a translation table to be used in translate function.24 max strReturns the max alphabetical character from the string str.25 min strReturns the min alphabetical character from the string str.26 replace old,new[,max]Replaces all occurrences of old in string with new or at most max occurrences if max given.27 rfind str, beg=0, end=len(string)Same as find, but search backwards in string.
+
+
+28 rindex str, beg=0, end=len(string)Same as index, but search backwards in string.29 rjust width, [,fillchar]Returns a space-padded string with the original string right-justified to a total of width columns.30 rstripRemoves all trailing whitespace of string.31 split =“” num=string.count(str)Splits string according to delimiter str and returns list of substrings; split into at mostnum substrings if given.32 splitlines num=string.count(‘\n)Splits string at all NEWLINEs and returns a list of each line with NEWLINEs removed.33 startswith str, beg=0 end=len(str)Determines if string or a substring of string if starting index began dending index end are givenstarts with substring str; returns true if so and false otherwise.34 strip [chars]Performs both lstrip and rstrip on string35 swapcaseInverts case for all letters in string.
+
+
+36 titleReturns "titlecased" version of string, that is, all words begin with uppercase and the rest are lowercase.37 translate table,deletechars=“”Translates string according to translation table str 256chars, removing those in the del string.38 upperConverts lowercase letters in string to uppercase.39 zfill widthReturns original string leftpadded with zeros to a total of width characters; intended for numbers, zfill retains anysign given LESS ONE ZERO.40 isdecimalReturns true if a unicode string contains only decimal characters and false otherwise.
+
+
+Built-in List Functions & Methods:
+##################################
+
+1 cmp LIST1,LIST2
+Compares elements of both lists.
+
+2 len LISTGives the total length of the list.3 max LISTReturns item from the list with max value.4 min LISTReturns item from the list with min value.5 list SEQConverts a tuple into list.List Methods:
+############1 list.append OBJAppends object obj to list2 list.count OBJReturns count of how many times obj occurs in list3 list.extend OBJAppends the contents of seq to list
+
+4 list.index OBJReturns the lowest index in list that obj appears5 list.insert INDEX, OBJInserts object obj into list at offset index6 list.pop OBJ=LIST[-1]Removes and returns last object or obj from list7 list.remove OBJRemoves object obj from list8 list.reverseReverses objects of list in place9 list.sort [FUNC]Sorts objects of list, use compare func if given
+
+Built-in Tuple Functions:
+##########################
+
+1 cmp TUPLE1,TUPLE2Compares elements of both tuples.2 len TUPLEGives the total length of the tuple.3 max TUPLEReturns item from the tuple with max value.4 min TUPLEReturns item from the tuple with min value.5 tuple SEQConverts a list into tuple.
+
+Built-in Dictionary Functions & Methods:
+############################################
+
+
+1 cmp DICT1,DICT2Compares elements of both dict.2 len DICTGives the total length of the dictionary. This would be equal to the number of items in the dictionary.
+
+3 str DICTProduces a printable string representation of a dictionary4 type VARIABLEReturns the type of the passed variable. If passed variable is dictionary, then it would return a dictionary type.
+
+Dictionary methods:
+######################
+
+1 dict.clearRemoves all elements of dictionary dict2 dict.copyReturns a shallow copy of dictionary dict3 dict.fromkeysCreate a new dictionary with keys from seq and values set to value.4 dict.get KEY, DEFAULT=NONEFor key key, returns value or default if key not in dictionary5 dict.has_key KEYReturns true if key in dictionary dict, false otherwise
+
+6 dict.itemsReturns a list of dict's KEY, VALUE tuple pairs7 dict.keysReturns list of dictionary dict's keys8 dict.setdefault KEY, DEFAULT=NONESimilar to get, but will set dict[key]=default if key is not already in dict9 dict.update DICT2Adds dictionary dict2's key-values pairs to dict10 dict.valuesReturns list of dictionary dict's values
+
+List of the different modes of opening a file:
+##################################################
+
+Modes 	Description
+r 	Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode
+rb 	Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is	the default mode.r+ 	Opens a file for both reading and writing. The file pointer placed at the beginning of the file.rb+ 	Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.w 	Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new filef	or writing.wb 	Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist,	creates a new file for writing.w+ 	Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not	exist, creates a new file for reading and writing.wb+ 	Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the	file does not exist, creates a new file for reading and writing.a 	Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the	append mode. If the file does not exist, it creates a new file for writing.ab 	Opens a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is,	the file is in the append mode. If the file does not exist, it creates a new file for writing.a+ 	Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file	opens in the append mode. If the file does not exist, it creates a new file for reading and writing.ab+ 	Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the	file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and	writing.
+
+The file Object Attributes:
+#############################
+
+Attribute 	Description
+
+file.closed 	Returns true if file is closed, false otherwise.file.mode 	Returns access mode with which file was opened.
+file.name 	Returns name of the file.file.softspace 	Returns false if space explicitly required with print, true otherwise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

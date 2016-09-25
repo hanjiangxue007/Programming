@@ -1,0 +1,254 @@
+/*1.	Write a C program to read number of items, rate and calculate total amount.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int noi;
+	float r,ta;
+	printf("\nEnter the number of items:  ");
+	scanf("%d",&noi);
+	printf("\nEnter the rate of an item:  ");
+	scanf("%f",&r);
+	ta=noi*r;
+	printf("\nThe total amount =Rs. %f",ta);
+	getch();
+}
+................................................................................................
+
+
+/*2.	Write a C program to convert days into year, months and remaining days.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int days, y, m, rd;
+	printf("\nEnter the number of days:  ");
+	scanf("%d",&days);
+	y = days / 365;
+	rd = days %365;
+	m = rd / 30;
+	rd = rd % 30;
+	printf("\nThe %d days converted into %d year %d months and %d remaining days",days, y, m, rd);
+	getch();
+}
+........................................................................................................................
+/*3.	Write a C program to add two distances meter and centimeter.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int m1, c1, m2, c2, m, c;
+printf("\nEnter first distance in meter and centimeter : ");
+scanf("%d %d", &m1, &c1);
+printf("\nEnter second distance in meter and centimeter : ");
+scanf("%d %d", &m2, &c2);
+c=(c1+c2)%100;
+m=m1+m2 +(c1+c2)/100;
+printf("\nSum of the two distances is %d m and %d cm", m,c);
+getch();
+}
+...................................................................................................................
+/*4.	Write a C program to add two distances in feet and inches.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int f1, i1, f2, i2, f, i;
+printf("\nEnter first distance in feet and inches : ");
+scanf("%d %d", &f1, &i1);
+printf("\nEnter second distance in feet and inches : ");
+scanf("%d %d", &f2, &i2);
+i=(i1+i2)%12;
+f=f1+f2 +(i1+i2)/12;
+printf("\nSum of the two distances %d ft %d in and %d ft %d in is %d feet and %d inches", f1,i1,f2,i2,f,i);
+getch();
+}
+.............................................................................................
+/* 5.	Write a C program to add two times in hour, minute and second.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int h1, m1, s1, h2, m2, s2, h, m, s;
+printf("\nEnter first time in hour, minute and second : ");
+scanf("%d %d %d", &h1,&m1, &s1);
+printf("\nEnter second time in hour, minute and second : ");
+scanf("%d %d %d", &h2,&m2, &s2);
+s = (s1+s2)%60;
+m = (m1+m2 + (s1+s2)/60)% 60;
+h = h1+h2+ (m1+m2 + (s1+s2)/60)/ 60;
+printf("\nThe sum of two times is %d hr %d min and %d sec", h,m,s);
+getch();
+}
+.............................................................................................................................
+/* 6.	To input a positive integer and find it is a perfect cube number or not.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n, i;
+printf("\nEnter any number to check perfect cube or not : ");
+scanf("%d",&n);
+for(i=1;i<n;i++)
+{
+if(i*i*i == n) 
+{
+printf("\n %d is perfect cube number",n);
+break;
+}
+}
+if(i==n)
+printf("\n%d number is not perfect cube number",n);
+getch();
+}
+...........................................................................................................
+/* 7.	Write a C program to calculate simple interest and compound interest.*/
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+main()
+{
+float p,t,r,si,ci;
+printf("\nEnter principal: ");
+scanf("%f",&p);
+printf("\nEnter time: ");
+scanf("%f",&t);
+printf("\nEnter rate of interest: ");
+scanf("%f",&r);
+si = p*t*r/100;
+ci = p*(pow(1+r/100,t)-1);
+printf("\nSimple interest is %.2f",si);
+printf("\nCompound interest is %.2f",ci);
+getch();
+}
+...............................................................................
+/* 8.	WAP to read a 5 digit number and find sum of individual digits. i.e. 54879=5+4+8+7+9=33.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, n, m, a,b,c,d, s=0;
+printf("\nEnter any 5 digit number (or UPTO 5 digits): ");
+scanf("%d", &n);
+m = n;
+a = n % 10; //extract last number of 54879 i.e. 9
+n = n / 10; //extract number except last number 9 i.e. 5487
+b = n % 10; // extract last number of 5487 i.e. 7
+n = n / 10; //extract number except last number 7 i.e. 548
+c = n % 10; // extract last number of 548 i.e. 8
+n = n / 10; //extract number except last number 8 i.e. 54
+d = n % 10; //extract last number of 54 i.e. 4
+n = n / 10; //extract number except last number 4 i.e. 5
+s = a+b+c+d+n;
+printf("\nThe sum of digits of %d is %d",m,s);
+getch();
+}
+.................................................................................................
+/* 9.	Write a C program to read a number and display it equivalence in octal and hexadecimal number.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n, o, h;
+printf("\nEnter any decimal number : ");
+scanf("%d", &n);
+printf("\nOctal of %d is %o", n,n);
+printf("\nHexadecimal of %d is %X",n,n);
+getch();
+}
+....................................................................................
+/* 10.	Write a C program to read a number and check it is Armstrong number or not. [Armstrong number 153 = 13+53+33]*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n, m, b, c, a = 0;
+printf("\nEnter any three digit number : ");
+scanf("%d", &n);
+m = n;
+b = n % 10; //extracting last number from 153 digit number i.e. 3
+n = n / 10; //extracting number except last digit 3 i.e. 15
+c = n % 10; // extracting last number from 15 i.e. 5
+n = n / 10; //extracting number except last number 5 i.e. 1
+a = b*b*b +c*c*c + n*n*n;
+if(a == m)
+printf("\nThe number %d is Armstrong number",m);
+else 
+printf("\n The number %d is not Armstrong number",m);
+getch();
+}
+.......................................................................................................................
+/* 11.	Write a program to read a four digit number and display it in reverse order.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n, m, b, c, r = 0;
+printf("\nEnter any three digit number : ");
+scanf("%d", &n);
+m = n;
+b = n % 10; //extracting last number from 153 digit number i.e. 3
+n = n / 10; //extracting number except last digit 3 i.e. 15
+c = n % 10; // extracting last number from 15 i.e. 5
+n = n / 10; //extracting number except last number 5 i.e. 1
+r = b*100+c*10+n;
+printf("\nThe reverse number of %d is %03d ", m, r);//%03 is used to padded zeros for making three digits.
+getch();
+}
+.........................................................................................
+/* 13.	Write a C program to check whether user input number is prime or not?*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int number, reverse;
+printf("\nEnter any three digit number : ");
+scanf("%d",&number);
+a = number % 10 ;
+number = number / 10;
+b = number %
+if(i == 0)
+printf("\nThe inputed word %s is palindrome", word);
+else 
+printf("\nThe inputed word %s is not palindrome", word);
+getch();
+}
+.............................................................................................................
+/* 13.	Write a C program to check whether user input number is prime or not?*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, n;
+printf("\nEnter any number : ");
+scanf("%d",&n);
+for(i=2;i<n;i++)
+{
+if(n%i==0)
+{
+printf("\nThe number %d is not prime",n);
+break;
+}
+}
+if(i==n)
+printf("\nThe number %d is prime",n);
+getch();
+}
+..............................................................................
+/*14.	Write a C program to read two numbers sum them and display result by using pointer.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a, b, *p, *q, sum = 0;
+printf("\nEnter two numbers: ");
+scanf("%d %d", &a,&b);
+p = &a;
+q = &b;
+sum = *p + *q;
+printf("\nThe sum is %d",sum);
+getch();
+}
+....................................................................
+
+

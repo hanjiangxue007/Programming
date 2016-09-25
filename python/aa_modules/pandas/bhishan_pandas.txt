@@ -1,0 +1,7 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 20, 2016
+
+# get wavelength between lambda1 and lambda2 from filter_2.txt
+waverange = df2[(df2.wave >= lambda1) & (df2.wave <= lambda2)][['wave']]
+print(waverange)
+

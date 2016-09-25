@@ -1,0 +1,7 @@
+zip 
+rar 
+tar			//application for unix like 
+z xz gz lz rz tgz
+iso dmg
+jar
+ 

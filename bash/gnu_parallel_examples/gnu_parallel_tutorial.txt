@@ -1,0 +1,84 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 08, 2016
+# Ref       : https://www.gnu.org/software/parallel/parallel_tutorial.html
+
+1. to get parallel tutorial:
+man parallel_tutorial
+
+2. examples
+
+a) parallel -k echo ::: A B C > abc-file
+A
+B
+C
+
+##====================================================================
+## PERL examples
+
+b)
+rm abc-file
+perl -e 'printf "A\0B\0C\0"' > abc0-file
+
+ABC
+
+c) perl -e 'printf "f1\tf2\nA\tB\nC\tD\n"' > tsv-file.tsv
+f1  f2
+A   B
+C   D
+
+d)
+perl -e 'for(1..128){print "$_\n"}' > num128  # 1 to 128 each line
+
+(echo %head1; echo %head2; perl -e 'for(1..10){print "$_\n"}') > num_%header
+
+# %head1
+%head2
+1 to 10 each line
+
+##==================================================================
+
+## parallel examples
+1. 
+parallel echo ::: A B C   # the order may be different
+
+2. 
+parallel -k echo ::: A B C > abc-file  # create abc-file
+parallel -a abc-file echo   # next method
+cat abc-file | parallel echo
+
+
+Note: -a is arguments (same as :::)
+
+parallel echo ::: A B C ::: D E F
+
+# from file
+parallel -k echo ::: A B C > abc-file  # create abc-file
+parallel -k echo ::: D E F > def-file  # create def-file
+
+# now echo lines from abc-file and def-file in parallel( all are same)
+parallel -a abc-file -a def-file echo
+cat abc-file | parallel -a - -a def-file echo
+cat abc-file | parallel echo :::: - def-file
+parallel echo ::: A B C :::: def-file
+
+
+3. Positional replacement strings
+parallel echo {1} and {2} ::: A B ::: C D
+
+4. Input from columns
+perl -e 'printf "f1\tf2\nA\tB\nC\tD\n"' > tsv-file.tsv
+parallel --colsep '\t' echo 1={1} 2={2} :::: tsv-file.tsv
+
+5. using jobs
+parallel --jobs 4 -m echo ::: 1 2 3 4 5 6 7 8 9 10
+
+# using -m = repalcement
+parallel --jobs 4 -m echo pre-{}-post ::: A B C D E F G
+
+6. To limit the number of arguments use -N:
+parallel -N3 echo ::: A B C D E F G H
+parallel -N3 echo 1={1} 2={2} 3={3} ::: A B C D E F G H
+
+7. fastest way ( --jobs 0 will run as many jobs paralles as possible)
+perl -e 'for(1..128){print "$_\n"}' > num128
+/usr/bin/time parallel -N0 --jobs 0 sleep 1 :::: num128

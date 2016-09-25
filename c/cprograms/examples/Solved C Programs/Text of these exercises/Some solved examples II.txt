@@ -1,0 +1,163 @@
+/*Calculate the factorial of number recursively.From that calculate the value of
+cos(x)=1-(x2/2!)+(x4/4!)-(....(xn/n!)*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int rec(int);
+main()
+{
+ int x,n,i,j;
+ float sum=0,z,s;
+ printf("Enter the value of 'n':");
+ scanf("%d",&n);
+ printf("Enter the value of x:");
+ scanf("%d",&x);
+ for(i=1;2*(i-1)<=n;i++)
+ {
+ z=pow(x,2*(i-1)) * pow(-1,(i-1));
+ sum=sum+(float)(z/rec(2*(i-1)));
+ }
+ printf("\n cos(x)=%f",sum);
+getch();
+}
+int rec(j)
+ {
+ if(j==0)
+ return 1;
+ else
+ return j* rec(j-1);
+ }
+........................................................................................................................................
+/*There are some goats and ducks in a farm. There are 60 eyes and 86 foot 
+in total. Write a program to find number of goats and ducks in the farm.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int eyes = 60, legs = 86, ducks, ships, animals;
+animals = eyes /2; //every has two eyes i.e. 30 total
+for(ducks = 0; ducks<=30; ducks++)
+{
+for(ships =0; ships <=30;ships++)
+{
+if(ducks*2+ships*4 == 86)
+{
+printf("\nducks = %d and ships = %d", ducks, ships);
+}
+}
+} 
+getch();
+}
+
+........................................................................................................................................
+/* Write a program to find Fibonacci series */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n, i, a=1, b=0, f=1;
+printf("\nHow many terms: ");
+scanf("%d",&n);
+for(i=1;i<n;i++)
+{
+printf("\t%d",f);
+a=b;
+b=f;
+f=a+b;
+}
+getch();
+} 
+
+........................................................................................................................................
+\\ Reverse number
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i,r,n,x, c=0;
+printf("Enter a number ");
+scanf("%d",&n);
+if(n>0)
+{
+x=0;
+while(n>0)
+{
+r=n%10;
+x=x*10+r;
+n=n/10;
+c++;
+}
+printf("\n the reverse number is =%0*d",c,x);
+}   
+else
+{
+printf("\nIt is not a positive number");
+}
+getch();
+}
+
+........................................................................................................................................
+\\ Reverse with padded
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i,r,n,x, c=0;
+printf("Enter a number ");
+scanf("%d",&n);
+if(n>0)
+{
+x=0;
+while(n>0)
+{
+r=n%10;
+x=x*10+r;
+n=n/10;
+c++;
+}
+printf("\n the reverse number is =%0*d",c,x);
+}   
+else
+{
+printf("\nIt is not a positive number");
+}
+getch();
+}
+
+........................................................................................................................................
+\\ Two digits
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, s,f;
+for(i=10;i<=99;i++)
+{
+s=i%10;
+f=i/10;
+if(((s-4)==f)&&(i%(f+s))==7)
+printf("\n%d",i);
+}
+getch();
+} 
+
+........................................................................................................................................
+\\ Type casting 
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int p,t,r,i;
+printf("\nEnter principal, time and rate:");
+scanf("%d %d %d",&p, &t, &r);
+i=p*t*r/100.00;
+printf("%d",i);
+getch();
+}
+
+........................................................................................................................................

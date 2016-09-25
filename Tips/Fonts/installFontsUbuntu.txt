@@ -1,0 +1,16 @@
+Bhishan Poudel
+Jan 17, 2016
+
+To install fonts in ubuntu
+============================
+
+1. intall the software called font manager from software center
+
+2. download required fonts (.ttf) eg. from
+   http://www.1001fonts.com/
+   
+3. unzip the downloaded files
+
+4. go to font manager
+   click mange fonts (non highligted button at the left bottom corner)
+   install the fonts

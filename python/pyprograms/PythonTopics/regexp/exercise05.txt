@@ -1,0 +1,7 @@
+A line with no backslashes in it
+A line with a backslash \ in it
+A line with a double backslash \\ in it
+
+A line with a backslash-n \n in it
+A line with a double backslash-n \\n in it
+

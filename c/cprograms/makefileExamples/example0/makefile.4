@@ -1,0 +1,18 @@
+# the special macros $@ and $^, which are the left and right sides of the :, respectively
+
+
+CC=gcc
+CFLAGS=-I.
+DEPS = hellomake.h
+OBJ = hellomake.o hellofunc.o 
+
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+hellomake: $(OBJ)
+	gcc -o $@ $^ $(CFLAGS)
+	
+.PHONY: clean
+
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 

@@ -1,0 +1,28 @@
+1. to make pdf from photos
+
+scan using SCANNABLE
+hold ipad vertical
+click button and save photos, ( or make autiomatic)
+click tick sign
+click upload button at bottom
+click select all
+click deselect all
+choose only selected photos
+then click Camera roll
+( then photos are saved in Photos icon)
+
+then,
+open TO PDF
+to to photos
+go to scannable
+select required photos
+click pdf converter logo at top right corner
+click convert to pdf
+rename
+go to PDFS 
+select required pdf 
+click upload button at top right corner
+click document
+choose onedrive
+click upload to onedrive at bottom of the page
+select the folder and upload.

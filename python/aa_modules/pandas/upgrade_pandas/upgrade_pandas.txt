@@ -1,0 +1,19 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-10
+
+upgrade pandas
+====================
+go to pyton terminal
+import pandas as pd
+print(pd.__version__)
+
+# answer June 10, 2016 = 0.18.0
+
+
+# note for mac:
+# i had python library default from Enthought canopy.
+# from prefrence of Enthought i unset default python library
+# restart the mac
+# sudo -H pip install --upgrade pip
+# sudo -H pip install --upgrade pandas
+

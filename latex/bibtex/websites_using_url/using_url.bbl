@@ -1,0 +1,8 @@
+\begin{thebibliography}{1}
+
+\bibitem{Doe:2009:Misc}
+George Doe.
+\newblock This is a test test entry of type {@MISC} and `howpublished'.
+\newblock \url{http://www.test.org/doe/}, June 2009.
+
+\end{thebibliography}

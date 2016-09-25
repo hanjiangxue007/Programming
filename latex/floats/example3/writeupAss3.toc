@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Finding roots}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Bisection Method}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}first root}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}second root}{2}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Newton-Raphson Secant Method}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}first root}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}second root}{3}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Comparison}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}Bond Length of the NaCl Molecule}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Plot of V(r)}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Minimum of V(r) and roots}{6}{subsection.2.2}

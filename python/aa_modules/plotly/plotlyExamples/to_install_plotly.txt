@@ -1,0 +1,26 @@
+Bhishan Poudel
+Feb 4, 2016
+
+How to install plotly for python
+=================================
+sudo pip install plotly
+
+
+To set api
+=======================
+create if not exist
+less ~/.plotly/.credentials
+
+if file is not there:
+touch ~/.plotly/.credentials
+geany ~/.plotly/.credentials
+
+paste this or edit to look like this:
+======================================
+{
+    "username": "bhishanpdl",
+    "stream_ids": [],
+    "api_key": "amq1tpxuig",
+    "proxy_username": "",
+    "proxy_password": ""
+}

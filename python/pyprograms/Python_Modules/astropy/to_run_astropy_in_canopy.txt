@@ -1,0 +1,8 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 15, 2016
+
+To run astropy module in canopy
+===============================================================================
+1. first install canopy
+2. open canopy and install astropy module using package manager
+3. open an existing file and run it.

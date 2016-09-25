@@ -1,0 +1,9 @@
+# Author    : Bhishan Poudel
+# Date      : Sep 01, 2016
+
+To install mpicc and mpich on ubuntu
+##======================================================================
+
+go to synaptic package manager
+
+search: mpich, mpicc, ,python-mpi4py, python3-mpi4py  and install them. 

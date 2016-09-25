@@ -1,0 +1,89 @@
+1. git config --global user.name "bhishanpdl"
+2. git config --global user.email "bhishantryphysics@gmail.com"
+3. git init
+4. git remote add origin https://github.com/bhishanpdl/test.git
+   ( this is for first time,
+     it will say fatal: remote origin already exists.)
+
+4.5 cd test
+5. create a file called readme  # echo nepal > nepal.txt
+6. git add readme or
+   git add .  this will add all the files in the folder
+7. git commit -m "first commit"
+8. note:
+   edit readme # echo india >> nepal.txt
+   git add.
+   git commit -m "new commit"
+   to remove new comment but keep the change
+   ==========================================
+   git reset --soft HEAD^
+
+   to remove new comment and undo last change
+   ==========================================
+   git reset --hard HEAD^
+9. git log    to see updates
+
+
+#####################################
+starting on new machine
+1. git clone https://github.com/bhishanpdl/repo_name
+   e.g. to download test folder from website to current directory
+
+   cd directory_to_download
+   git clone https://github.com/bhishanpdl/test
+
+   ----------------------------------------------------------------------------
+   if done on same machine same folder it will show error
+   fatal: destination path 'test' already exists and is not an empty directory.
+
+   note: to clone to present directory (. is here
+   path value, meaning present directory)
+
+   cd requred_directory
+   git clone webpagesite.git .
+   ----------------------------------------------------------------------------
+
+
+   ls  # see whether there is test folder
+   cd test
+   echo example file > a.txt
+   less a.txt
+   press q
+
+   to push this file to repo
+   ===========================
+   git status
+   git commit -m "added a file"
+
+2. to stage all the files
+   git add .
+   to stage all the txt files only using wild card *
+   git add *.txt
+
+3. create a new branch:
+   git branch Mybranch
+
+   to go to that branch:
+   git checkout Mybranch
+
+   to go to main branch: git checkout master
+
+4. to push the changed file to the repo
+
+   git push   or,
+   git push -u origin master  # user: bhishanpdl # pw: usual ohio
+
+5. to upload changes
+   git add commit push
+
+6. to pull files from repo
+   git pull -u origin master or git pull origin master
+7. to delete files
+   git rm -rf a.txt a.txt~ b.txt b.txt~
+   git commit -m "delete two files and their temp files"
+   git push -u origin master
+   (refresh or F5 the webpage to see changes)
+8. color output for git
+   =======================
+    git config color.ui true
+

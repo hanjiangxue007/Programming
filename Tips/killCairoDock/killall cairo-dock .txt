@@ -1,0 +1,4 @@
+to kill cairo dock
+===================
+
+killall cairo-dock 

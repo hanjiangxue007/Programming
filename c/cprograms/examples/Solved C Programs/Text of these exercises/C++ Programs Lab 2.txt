@@ -1,0 +1,374 @@
+/*1.	For any integer input through the keyboard, write a C program to find out whether it is an odd number or even number.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,r;
+	printf("Enter a number ");
+	scanf("%d",&n);
+	r=n%2;
+	if(r==0)
+	{
+		printf("\n%d is even number",n);
+	}
+	else
+	{
+		printf("\n%d is odd number",n);		
+	}
+	getch();
+	return(0);
+}
+...............................................................................................................
+/*2.	Write a program to print the following pattern.
+	1
+	2	2
+	3	3	3
+	4	4	4	4
+	5	5	5	5	5
+	*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b;
+	printf("the required pattern is ");
+	printf("\n");
+	for(a=1;a<=5;a++)
+	{
+		for(b=1;b<=a;b++)
+		{
+			printf("%d\t",a);
+		}
+		printf("\n\n");
+	}
+	getch();
+	return(0);
+}
+.....................................................................................................
+/*3.	Write a program to input any three different numbers and find the middle value.*/
+#include<stdio.h>
+#include<conio.h>
+#include<process.h>
+main()
+{
+	int n1,n2,n3;
+	printf("Enter first  number ");
+	scanf("%d",&n1);
+	printf("Enter second  number ");
+	scanf("%d",&n2);
+	printf("Enter third  number ");
+	scanf("%d",&n3);
+	if(n1==n2 || n1==n3||n2==n3)
+	{
+		printf("\nPlease, enter the different numbers ");
+		getch();
+		//exit(0);
+	}
+	if((n1>n2 && n1<n3)||(n1<n2&&n1>n3))
+	{
+		printf("\n%d is middle  number",n1);
+	}
+	else if((n2>n1&& n2<n3)||(n2<n1&&n2>n3))
+	{
+		printf("\n%d is middle number",n2);		
+	}
+	else
+	{
+		printf("\n%d is middle number",n3);
+	}
+	getch();
+	return(0);
+}
+
+..................................................................................................................................
+/*4.	Write a C program to print the following series of cube numbers up to nth term. 1, 8, 27, …*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,i,c;
+	printf("Enter the 'n' th term of the series ");
+	scanf("%d",&n);
+	printf("\nthe required series is ");
+	for(i=1;i<=n;i++)
+	{
+		c=i*i*i;
+		printf("%d\t",c);
+	}
+	getch();
+	return(0);
+}
+..................................................................................................................................
+/*5.	Write a C program to print multiplication table up to N.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,i,j,m;
+	printf("Enter the last number for the series of multiplication table  ");
+	scanf("%d",&n);
+	 
+	for(i=1;i<=n;i++)
+	{
+		printf("\nThe multiplication table of %d is ");
+		printf("\n\n");
+		for(j=1;j<=10;j++)
+		{
+			m=j*i;
+			printf("\n%d * %d =%d",i,j,m);
+		}
+	}
+	getch();
+	return(0);
+}
+
+..................................................................................................................................
+
+/*6.	Write a C program to print Fibonacci series upto N terms. [Fibonacci series: 1, 1, 2, 3, 5, 8, 13, ……]*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,f,n,i;
+	printf("Enter the value of 'n' th term : ");
+	scanf("%d",&n);
+	printf("\n The fibonacci series up to %d th term is :\n\n ",n);
+	a = 0;
+	b = 1;
+	f = 1;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d\t",f);
+		f = a + b;
+		a=b;
+		b=f;
+	}
+	getch();
+}
+
+
+..................................................................................................................................
+
+/*7.	Write an algorithm to input a number and print it is positive or negative number.  Then, Convert the algorithm into C program code.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,r;
+	printf("Enter a number ");
+	scanf("%d",&n);
+	if(n>0)
+	{
+		printf("\n%d is positive number",n);
+	}
+	else
+	{
+		printf("\n%d is negative number",n);		
+	}
+	getch();
+	return(0);
+}
+
+..................................................................................................................................
+
+
+/*9.	Write an algorithm to input a number and find whether it is exactly divisible by both 5 and 8 or not.  Convert the algorithm into C program code.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,r1,r2;
+	printf("Enter a number ");
+	scanf("%d",&n);
+	r1=n%5;
+	r2=n%8;
+	if(r1==0&&r2==0)
+	{
+		printf("\n%d is exactly divisible by both 5 and 8",n);
+	}
+	else if(r1==0)
+	{
+		printf("\n%d is exactly divisible by  5 only but not by 8",n);
+	}
+	else if(r2==0)
+	{
+		printf("\n%d is exactly divisible by  8 only but not by 5",n);
+	}
+	else 
+	{
+		printf("\n%d is not  divisible by   5 and 8 both",n);
+	}
+	getch();
+	return(0);
+}
+
+..................................................................................................................................
+
+/*10.	Write a program to input any 3 numbers and find smallest number by using function.*/
+#include<stdio.h>
+#include<conio.h>
+#include<process.h>
+int smallest(int,int,int);
+main()
+{
+	int n1,n2,n3,s;
+	printf("Enter first  number ");
+	scanf("%d",&n1);
+	printf("Enter second  number ");
+	scanf("%d",&n2);
+	printf("Enter third  number ");
+	scanf("%d",&n3);
+	if(n1==n2 || n1==n3||n2==n3)
+	{
+		printf("\nPlease, enter the different numbers ");
+		getch();
+		//exit(0);
+	} 
+	s=smallest(n1,n2,n3);
+	printf("\nThe smallest number=%d",s);
+	getch();
+	return(0);
+}
+int smallest(int n1,int n2,int n3)
+{
+	int s;
+	if(n1<n2 && n1<n3)
+	{
+		s=n1;
+	}
+	else if(n2<n1&& n2<n3)
+	{
+		s=n2;		
+	}
+	else
+	{
+		s=n3;
+	}
+	return(s);
+}
+
+
+
+..................................................................................................................................
+
+/*11.	Write an algorithm and C program to read a number and find is it exactly divisible by 3 and 5 or not?*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,r1,r2;
+	printf("Enter a number ");
+	scanf("%d",&n);
+	r1=n%3;
+	r2=n%5;
+	if(r1==0&&r2==0)
+	{
+		printf("\n%d is exactly divisible by both 3 and 5",n);
+	}
+	else if(r1==0)
+	{
+		printf("\n%d is exactly divisible by  3 only but not by 5",n);
+	}
+	else if(r2==0)
+	{
+		printf("\n%d is exactly divisible by  5 only but not by 3",n);
+	}
+	else 
+	{
+		printf("\n%d is not  divisible by   3 and  5 both",n);
+	}
+	getch();
+	return(0);
+}
+
+..................................................................................................................................
+
+/*12.	Write a C program to print all Armstrong number form 1 to 1000*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i,n,a,x,r;
+	printf("\n the series of armstrong numbers upto 1000 are ");
+	for(i=1;i<=1000;i++)
+	{
+		n=i;
+		a=i;
+		x=0;
+		while(n>0)
+		{
+			r=n%10;
+			x=x+r*r*r;
+			n=n/10;
+		}
+		if(x==a)
+		{
+			printf("%d\t",a);
+		}
+	}
+	getch();
+}
+
+..................................................................................................................................
+
+
+/*13.	Write a program to read two numbers and find the bigger number by using function.*/
+#include<stdio.h>
+#include<conio.h>
+int bigger(int,int);
+main()
+{
+	int n1,n2,big;
+	printf("Enter the first number ");
+	scanf("%d",&n1);
+	printf("Enter the second number ");
+	scanf("%d",&n2);
+	big=bigger(n1,n2);
+	printf("\nthe bigger number=%d",big);
+	getch();
+	return(0);
+}
+int bigger(int a,int b)
+{
+	if(a>b)
+	{
+		return(a);
+	}
+	else
+	{
+		return(b);
+	}
+}
+
+
+..................................................................................................................................
+
+
+/*14.	Write a program to input the cost price and selling price and calculate the profit or loss.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	float cp,sp,amt;
+	printf("Enter the cost price of the item ");
+	scanf("%f",&cp);
+	printf("Enter the sales price of the item ");
+	scanf("%f",&sp);
+	if(sp>cp)
+	{
+		amt=sp-cp;
+		printf("\n The profit amount=Rs.%.2f",amt);
+	}
+	else if(cp>sp)
+	{
+		amt=cp-sp;
+		printf("\n The loss amount=Rs.%.2f",amt);
+	}
+	else
+	{
+		printf("\n There is neither profit nor loss");
+	}
+	getch();
+	return(0);
+}
+

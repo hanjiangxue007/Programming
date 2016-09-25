@@ -1,0 +1,6 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 19, 2016
+# Ref       : http://stackoverflow.com/questions/26236126/how-to-run-bash-command-inside-python-script
+
+
+If you do not need shell features (such as variable expansion, wildcards, ...), never use shell=True. Then you don't need to do escaping yourself etc.

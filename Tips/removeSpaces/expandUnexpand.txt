@@ -1,0 +1,58 @@
+convert spaces and tabs
+!!!!!!!!!!!!!!!!!!!!!!!
+
+touch file1 file2 file3
+go inside file1 and type following:
+one tab two tab three
+
+
+convert tab to spaces using expand
+----------------------------------
+expand file1 > file2
+
+
+convert spaces to tabs
+========================
+unexpand -a file2 > file3  (convets all 8 spaces in a line to tabs)
+unexpand --tabs=8 try.txt > try2.txt
+
+
+================================================================================
+Expand Command Options
+
+
+       -i, --initial
+              do not convert tabs after non blanks
+
+       -t, --tabs=NUMBER
+              have tabs NUMBER characters apart, not 8
+
+       -t, --tabs=LIST
+              use comma separated list of explicit tab positions
+
+       --help display this help and exit
+
+       --version
+              output version information and exit 
+
+================================================================================
+Unexpand Command Options
+
+
+       -a, --all
+              convert all blanks, instead of just initial blanks
+
+       --first-only
+              convert only leading sequences of blanks (overrides -a)
+
+       -t, --tabs=N
+              have tabs N characters apart instead of 8 (enables -a)
+
+       -t, --tabs=LIST
+              use comma separated LIST of tab positions (enables -a)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+================================================================================

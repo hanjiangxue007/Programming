@@ -1,0 +1,29 @@
+1................................
+ minimize all the windows using terminal 
+wmctrl -k on
+
+2.................................
+list of recently done activities
+wmctrl -k on
+
+3..........................
+ minimize all windowns
+ctrl alt down
+................................
+sudo = super user do
+
+4........................
+search the file directory ingnoring case sensitivity
+locate -i filename
+
+5............................
+taskill
+xkill
+............................
+to see whole text of a file
+less filename
+...........................
+to end seeing the file texts
+press q
+............................
+

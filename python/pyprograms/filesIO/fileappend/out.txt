@@ -1,0 +1,5 @@
+# coating file for detector A/R
+# column 1 is the angle of incidence (degrees)
+# column 2 is the wavelength (microns)
+# column 3 is the transmission probability
+# column 4 is the reflection probability

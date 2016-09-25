@@ -1,0 +1,4 @@
+to save everythin in the terminal
+==================================
+
+cmd s

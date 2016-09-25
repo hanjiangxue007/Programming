@@ -1,0 +1,17 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 11, 2016
+# Ref     : http://askubuntu.com/questions/676210/how-to-sync-onedrive-on-ubuntu-14-04
+
+onedriv-d commands for linux
+===============================================================================
+onedrive-d --help for commands.
+
+onedrive-d [command]
+
+Commands:
+     start    Start the daemon.
+     stop     Stop the daemon.
+     restart  Stop then start the daemon.
+     status   Get the status of the daemon.
+
+e.g., onedrive-d status

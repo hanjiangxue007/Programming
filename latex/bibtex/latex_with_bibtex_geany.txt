@@ -1,0 +1,18 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 18, 2016
+
+To run latex in geany with bibtex references
+##======================================================================
+
+Build > Set Build commands >
+
+Execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm %e.aux; rm %e.bbl; rm %e.blg; rm %e.log; rm %e.out; xdg-open %e.pdf
+
+View pdf : xdg-open %e.pdf
+
+
+##=============================================================================
+For mac:
+Execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm %e.aux; rm %e.bbl; rm %e.blg; rm %e.log; rm %e.out; open %e.pdf
+
+View pdf : open %e.pdf

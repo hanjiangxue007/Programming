@@ -1,0 +1,375 @@
+...................................................................................................................................................................
+/*1.	Write a C program to read any number and display 1 for January, 2 for February ……….., 12 for December and other for 'wrong input'.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a;
+	printf("\nEnter a number between 1 to 12 ");
+	scanf("%d",&a);
+	switch(a)
+	{
+		case 1:
+			printf("\nJanuary");
+			break;
+		case 2:
+			printf("\nFebruary");
+			break;
+		case 3:
+			printf("\nMarch");
+			break;			
+		case 4:
+			printf("\nApril");
+			break;
+		case 5:
+			printf("\nMay");
+			break;
+		case 6:
+			printf("\nJune");
+			break;
+		case 7:
+			printf("\nJuly");
+			break;
+		case 8:
+			printf("\nAugust");
+			break;
+		case 9:
+			printf("\nSemptember");
+			break;
+		case 10:
+			printf("\nOctober");
+			break;
+		case 11:
+			printf("\nNovember");
+			break;
+		case 12:
+			printf("\nDecember");
+			break;
+		default:
+			printf("\n\nyou entered invalid number. Please enter a number between 1 to 12 ");
+	}
+	getch();
+}
+...................................................................................................................................................................
+/*2.	The marks obtained by a student in 7 different subjects are entered through the keyboard. The student gets a division as per the following rules: 	[10]
+Percentage greater or equal to 60	First Division
+Percentage between 45 and 59	Second Division
+Percentage between 35 and 44	Third Division
+Percentage less than 35 	Fail
+Marks less than 35 in a subject will be declared as   	Fail
+*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+main()
+{
+	int s1,s2,s3,s4,s5,s6,s7,total;
+	float percent;
+	char res[10],div[30];
+	printf("\nEnter the marks of first subject ");
+	scanf("%d",&s1);
+	printf("\nEnter the marks of second subject ");
+	scanf("%d",&s2);
+	printf("\nEnter the marks of third subject ");
+	scanf("%d",&s3);
+	printf("\nEnter the marks of fourth subject ");
+	scanf("%d",&s4);
+	printf("\nEnter the marks of fifth subject ");
+	scanf("%d",&s5);
+	printf("\nEnter the marks of sixth subject ");
+	scanf("%d",&s6);
+	printf("\nEnter the marks of seventh subject ");
+	scanf("%d",&s7);
+	//code to find total
+	total=s1+s2+s3+s4+s5+s6+s7;
+	//code to find percent and result
+	if(s1>=35&&s2>=35&&s3>=35&&s4>=35&&s5>=35 &&s6>=35&&s7>=35)
+	{
+		percent=(float)total*100/700;
+		strcpy(res,"Pass");
+	}
+	else
+	{
+		percent=0;
+		strcpy(res,"Fail");
+	}
+	//code to find division
+	if(percent>=60)
+	{
+		strcpy(div,"First Division");
+	}
+	else if(percent>=45)
+	{
+		strcpy(div,"Second Division");
+	}
+	else if(percent>=35)
+	{
+		strcpy(div,"Third Division");
+	}
+	else
+	{
+		strcpy(div,"Fail");
+	}
+	//code to display total, percent, result and division
+	printf("\nTotal marks=%ld",total);
+	printf("\n Percentage =%.2f",percent);
+	printf("\n Result= %s",res);
+	printf("\n Division=%s",div);
+	getch();
+}
+	
+
+...................................................................................................................................................................
+/*3.	Write a C program to print all Armstrong numbers upto 1000.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,n,r,x;
+	printf("The Armstrong number upto 1000 are ");
+	for(a=1;a<=1000;a++)
+	{
+		n=a;
+		x=0;
+		while(n>0)
+		{
+			r=n%10;
+			x=x+r*r*r;
+			n=n/10;
+		}
+		if(x==a)
+		{
+			printf("%d\t",a);
+		}
+	}
+	getch();
+}
+
+...................................................................................................................................................................
+/*4.	Write a program to find out whether it is an odd number or even number. (HSEB 2062,2068)*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,r;
+	printf("\nEnter a number ");
+	scanf("%d",&n);
+	r=n%2;
+	if(r==0)
+	{
+		printf("\n%d is even number",n);
+	}
+	else
+	{
+		printf("\n%d is odd number",n);
+	}
+	getch();
+}
+
+...................................................................................................................................................................
+/*5.	Write a C program to show the number in power of 2 up to N.*/
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+main()
+{
+long int i, n;
+long int ans;
+printf("\nEnter how many terms : ");
+scanf("%d",&n);
+for(i=0;i<=n;i++)
+{
+ans = pow(2,i);
+printf("\nThe %d times power of 2 is %ld",i,ans);
+}
+getch();
+}
+
+...................................................................................................................................................................
+/*6.	Write a program to encode user input text and decode them.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+char msg[100], encod[100], decod[100];
+int i;
+puts("Enter message to encode : ");
+gets(msg);
+for(i=0;msg[i]!='\0';i++)
+{
+encod[i] = msg[i] - 10; //any value can be placed.
+}
+encod[i] = '\0';
+printf("\nEncoded message is :\n");
+puts(encod);
+for(i=0;encod[i] !='\0';i++)
+{
+decod[i] = encod[i] + 10;//same value should be placed.
+}
+printf("\nDecoded message is :\n");
+puts(decod);
+getch();
+}
+
+...................................................................................................................................................................
+/*7.	Write a program to count the number of words in a text.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+char msg[100];
+int i, w = 0;
+puts("Enter one paragraph to count words :\n\n ");
+gets(msg);
+for(i=0;msg[i]!='\0';i++)
+{
+if(msg[i] == ' ')//checks spaces for counting words.
+w ++;
+}
+printf("\nThere are %d words",w+1);//the last word do not have space at last hence +1.
+getch();
+}
+
+...................................................................................................................................................................
+/*8.	Write a C program to find the GCD of 4 integers.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, a, b, c, d;
+printf("\nEnter any four numbers : ");
+scanf("%d %d %d %d", &a, &b, &c, &d);
+for(i=a;i>0;i--)
+{
+if(a%i == 0 && b % i == 0 && c % i == 0 && d % i == 0)
+{
+printf("\nThe GCD of %d %d %d and %d is %d", a, b, c, d, i);
+break;
+}
+}
+getch();
+}
+
+...................................................................................................................................................................
+/*9.	Write a C program to display the sum of 'n' terms of even numbers.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, n, evnsum=0;
+printf("\nEnter how many terms : ");
+scanf("%d", &n);
+for(i=0;i<=n;i+=2)
+{
+evnsum += i;
+}
+printf("\nThe sum of even numbers upto %d is %d", n, evnsum );
+getch();
+}
+
+...................................................................................................................................................................
+/*10.	Write a C program to print first 10 terms of the following series using FOR loop 1, 5, 9,  13   ………*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i, a=1;
+printf("\nThe first 10 terms of the series is : ");
+for(i=0;i<10;i++)
+{
+printf("%d, ",a);
+a = a + 4;
+}
+getch();
+}
+
+...................................................................................................................................................................
+/*11.	Write a C program to find a peculiar two digit number which is three times the sum of its digits.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int x,y,z=0, i;
+for(i=10;i<=99;i++)
+{
+ x=i/10;
+ y=i%10;
+ z=3*(x+y);
+if(i==z)
+printf("\nThe peculiar two digit number is : %d\t",i);
+}
+getch();
+}
+
+...................................................................................................................................................................
+
+/*12.	Write a program to input an integer number and checks whether it is prime or not.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int n,r,i;
+printf("\n Enter a number  ");
+scanf("%d",&n);
+for(i=2;i<n;i++)
+{
+if(n%i==0)
+{
+  printf("%d is not prime",n);
+  break;
+}
+}
+if(i==n)
+printf("\n%d is prime",n);
+getch();
+}
+
+
+...................................................................................................................................................................
+/*13.	A number of "Cats" got together and decided to kill between them 999919 mice. 
+Every cat killed equal number of "mice". Write a program to find number of cats.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int mice=999919,cats;
+printf("\nPossible combinations of\n\nCats\t\tMice\n\n ");
+for(cats=2;cats<=999919;cats++)
+{
+ if(mice%cats==0)
+ {
+ printf("%d\t\t%d\n",cats, mice);
+}
+}
+getch();
+}
+
+
+
+...................................................................................................................................................................
+/*14.	There are some goats and ducks in a farm. There are 60 eyes and 86 foot in total. 
+Write a program to find number of goats and ducks in the farm.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int eyes = 60, legs = 86, ducks, ships, animals;
+animals = eyes /2; //every has two eyes i.e. 30 total
+printf("\nThe possible combinations is: ");
+for(ducks = 0; ducks<=30; ducks++)
+{
+for(ships =0; ships <=30;ships++)
+{
+if(ducks*2+ships*4 == 86 && (ducks+ships)*2 == 60)
+{
+printf("\nducks = %d and ships = %d having %d eyes and %d foot", ducks, ships, (ducks+ships)*2, ducks*2+ships*4);
+}
+}
+} 
+getch();
+}
+
+
+
+...................................................................................................................................................................

@@ -1,0 +1,29 @@
+Bhishan Poudel
+Feb 15, 2016
+
+To add a link to run executables in ubuntu
+============================================
+Suppose I have a binary called galfit (or may be hello from c-program)
+then I want the computer to recognize the command galfit from anywhere.
+
+method 1:
+===============================================================================
+Copy the binary to usr/local/bin
+sudo cp EXECUTABLE-NAME /usr/local/bin
+
+eg. sudo cp galfit /usr/local/bin
+
+
+method 2: export the PATH varible
+===============================================================================
+if not exist create ~/bin
+put the executable inside ~/bin  and make it read-write executable
+then, add this inside ~/.bashrc
+export PATH=$PATH:/directory_of_executable
+
+e.g.
+export PATH=$PATH:~/bin
+
+
+NOTE: echo "$PATH"     to see all the paths  after adding we will see this:
+:/home/bhishan/bin

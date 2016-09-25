@@ -1,0 +1,25 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Doe(2009{\natexlab{a}})]{Doe:2009:Other}
+Brian Doe.
+\newblock This is a test entry of type {@OTHER}, June 2009{\natexlab{a}}.
+\newblock URL \url{http://www.test.org/doe/}.
+
+\bibitem[Doe(2009{\natexlab{b}})]{Doe:2009:Misc}
+Paul Doe.
+\newblock This is a test test entry of type {@MISC}, June 2009{\natexlab{b}}.
+\newblock URL \url{http://www.test.org/doe/}.
+
+\bibitem[Hartle(2003)]{hartle2003gravity}
+J.B. Hartle.
+\newblock \emph{Gravity: An Introduction to Einstein's General Relativity}.
+\newblock Addison-Wesley, 2003.
+\newblock ISBN 9780805386622.
+\newblock URL \url{https://books.google.com/books?id=ZHgpAQAAMAAJ}.
+
+\end{thebibliography}

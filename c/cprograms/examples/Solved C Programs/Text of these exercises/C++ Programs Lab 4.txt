@@ -1,0 +1,1272 @@
+......................................................................................................................................................
+/*1)	Write a program to input any 10 numbers in an array and find the total.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[10],i,t;
+	printf("\nEnter any 10 numbers ");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	t=0;
+	for(i=0;i<10;i++)
+	{
+		t=t+num[i];
+	}
+	printf("\n The total=%d",t);
+	getch();
+}
+......................................................................................................................................................
+/*2)	Write a program to input the marks of any 20 students in Computer Science and find the average marks.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int marks[20],i,t;
+	float avg;
+	printf("\nEnter the marks of any 20 students in computer science  ");
+	for(i=0;i<20;i++)
+	{
+		scanf("%d",&marks[i]);
+	}
+	printf("\n The marks are ");
+	for(i=0;i<20;i++)
+	{
+		printf("%d ",marks[i]);
+	}
+	t=0;
+	for(i=0;i<20;i++)
+	{
+		t=t+marks[i];
+	}
+	avg=t/20;
+	printf("\n The average marks in computer science=%f",avg);
+	getch();
+}
+......................................................................................................................................................
+/*3)	Write a program to input the monthly profit of a bank in a year and find the total and monthly average profit of the bank in that year.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	float profit[12],t,avg;
+	int i;
+	printf("\nEnter the monthly profit of a bank in a year  ");
+	for(i=0;i<12;i++)
+	{
+		scanf("%f",&profit[i]);
+	}
+	printf("\n The monthly profit amount ");
+	for(i=0;i<12;i++)
+	{
+		printf("%f ",profit[i]);
+	}
+	t=0;
+	for(i=0;i<12;i++)
+	{
+		t=t+profit[i];
+	}
+	avg=t/12;
+	printf("\n The average profit of a bank in a year=%f",avg);
+	getch();
+}
+......................................................................................................................................................
+/*4)	Write a program to input the age of ‘n’ numbers of students in a class and find the average age of the students in that class.*/
+#include<stdio.h>
+#include<conio.h>
+#define N 1000
+main()
+{
+	int age[N],i,t,n;
+	float avg;
+	printf("Enter the value of 'n' i.e. number of students ");
+	scanf("%d",&n);
+	printf("\nEnter the age of the students   ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&age[i]);
+	}
+	printf("\n The age are ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",age[i]);
+	}
+	t=0;
+	for(i=0;i<n;i++)
+	{
+		t=t+age[i];
+	}
+	avg=t/n;
+	printf("\n The average age of students=%f",avg);
+	getch();
+}
+
+......................................................................................................................................................
+/*5)	Write a program to input any 50 numbers in an array and find the sum of positive numbers only.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,t;
+	printf("\nEnter any 50 numbers  ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	t=0;
+	for(i=0;i<50;i++)
+	{
+		if(num[i]>0)
+		{
+			t=t+num[i];
+		}
+	}
+	printf("\n The sum of positive numbers=%d",t);
+	getch();
+}
+......................................................................................................................................................
+/*6)	Write a program to input any 50 numbers in an array and find the sum of even numbers only.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,t;
+	printf("\nEnter any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	t=0;
+	for(i=0;i<50;i++)
+	{
+		if(num[i]%2==0)
+		{
+			t=t+num[i];
+		}
+	}
+	printf("\n The sum of even numbers only=%d",t);
+	getch();
+}
+......................................................................................................................................................
+/*7)	Write a program to input any 50 numbers in an array and find the sum of odd numbers only.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,t;
+	printf("\nEnter any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	t=0;
+	for(i=0;i<50;i++)
+	{
+		if(num[i]%2==1)
+		{
+			t=t+num[i];
+		}
+	}
+	printf("\n The sum of odd numbers only=%d",t);
+	getch();
+}
+......................................................................................................................................................
+/*8)	Write a program to input any 10 numbers and count how many numbers are positive.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[10],i,c;
+	printf("\nEnter any 10 numbers ");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	c=0;
+	for(i=0;i<10;i++)
+	{
+		if(num[i]>0)
+		{
+			c++;
+		}
+	}
+	printf("\n The no. of positive numbers =%d",c);
+	getch();
+}
+......................................................................................................................................................
+/*9)Write a program to input the marks of any 100 students in computer science and count how many students got marks in the range of 70 to 90.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int marks[100],i,c;
+	printf("\nEnter the marks 100 students ");
+	for(i=0;i<100;i++)
+	{
+		scanf("%d",&marks[i]);
+	}
+	printf("\n The marks are ");
+	for(i=0;i<100;i++)
+	{
+		printf("%d ",marks[i]);
+	}
+	c=0;
+	for(i=0;i<100;i++)
+	{
+		if(marks[i]>=70 && marks[i]<=90)
+		{
+			c++;
+		}
+	}
+	printf("\n The no. of students who got marks in the range of 70 to 90 are=%d",c);
+	getch();
+}
+......................................................................................................................................................
+/*10)	Write a program to input the marks of any 50 students in a subject and count how many students got above the average marks.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int marks[50],i,c,t;
+	float avg;
+	printf("\nEnter marks of any 50 students ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&marks[i]);
+	}
+	printf("\n The marks are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",marks[i]);
+	}
+	t=0;
+	for(i=0;i<50;i++)
+	{
+		t=t+marks[i];
+	}
+	avg=t/50;
+	c=0;
+	for(i=0;i<50;i++)
+	{
+		if(marks[i]>avg)
+		{
+			c++;
+		}
+	}
+	printf("\n The no. of students who got above average marks =%d",c);
+	getch();
+}
+......................................................................................................................................................
+/*11)	Write a program to input marks of any 40 students in a subjects and count how many students are passed in Distinction, First Division, Second Division, Third Division and Failed. 
+Marks		Division
+>=75		Distinction
+>=60		First 
+>=45		Second
+>=35		Third
+Below 35	Fail
+*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int marks[40],i,c1,c2,c3,c4,c5;
+	printf("\nEnter marks of any 40 students ");
+	for(i=0;i<40;i++)
+	{
+		scanf("%d",&marks[i]);
+	}
+	printf("\n The marks are ");
+	for(i=0;i<40;i++)
+	{
+		printf("%d ",marks[i]);
+	}
+	c1=c2=c3=c4=c5=0;
+	for(i=0;i<40;i++)
+	{
+		if(marks[i]>=75)
+		{
+			c1++;
+		}
+		else if(marks[i]>=60)
+		{
+			c2++;
+		}
+		else if(marks[i]>=45)
+		{
+			c3++;
+		}
+		else if(marks[i]>=35)
+		{
+			c4++;
+		}
+		else
+		{
+			c5++;
+		}
+		
+	}
+	printf("\n The no. of students passed in Distinction=%d",c1);
+	printf("\n The no. of students passed in First Division=%d",c2);
+	printf("\n The no. of students passed in Second Division=%d",c3);
+	printf("\n The no. of students passed in third Division=%d",c4);
+	printf("\n The no. of students who got failed=%d",c5);
+	getch();
+}
+
+......................................................................................................................................................
+/*12)	Write a program to input any 50 numbers in an array and count how many are even and odd numbers are in the list.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,c1,c2;
+	float avg;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	c1=c2=0;
+	for(i=0;i<50;i++)
+	{
+		if(num[i]%2==0)
+		{
+			c1++;
+		}
+		else
+		{
+			c2++;
+		}
+	}
+	printf("\n The no. of even numbers =%d",c1);
+	printf("\n the no. of odd numbers=%d",c2);
+	getch();
+}
+......................................................................................................................................................
+/*13)	Write a program to input any 50 numbers and count how many are prime numbers.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,j,c,r,result=1;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	for(i=0;i<50;i++)
+	{
+		result=1;
+		for(j=2;j<num[i];j++)
+		{
+			r=num[i]%j;
+			if(r==0)
+			{
+				result=0;
+				break;
+			}
+		}
+		if(result==0)
+		{
+			continue;
+		}
+		else
+		{
+			c++;
+		}
+	}
+	printf("\n the no. of prime numbers in the array=%d",c);
+	getch();
+}
+......................................................................................................................................................
+/*14)	Write a program to input any 50 numbers and count how many numbers are there which are exactly divisible by 7.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,c;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	for(i=0;i<50;i++)
+	{
+		if(num[i]%7==0)
+		{
+			c++;
+		}
+	}
+	printf("\n there are %d numbers which are exactly divisible by 7",c);
+	getch();
+}
+......................................................................................................................................................
+/*15)	Write a program to input any 50 numbers and count how many numbers are square and cube numbers.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,j,ans,result,c1,c2;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	//code to count square numbers
+	for(i=0;i<50;i++)
+	{
+		result=0;
+		for(j=1;j<=num[i];j++)
+		{
+			ans=j*j;
+			if(ans==num[i])
+			{
+				result=1;
+				break;
+			}
+		}
+		if(result==1)
+		{
+			c1++;
+		}
+	}
+	//code to count dube numbers
+	for(i=0;i<50;i++)
+	{
+		result=0;
+		for(j=1;j<=num[i];j++)
+		{
+			ans=j*j*j;
+			if(ans==num[i])
+			{
+				result=1;
+				break;
+			}
+		}
+		if(result==1)
+		{
+			c2++;
+		}
+	}
+	printf("\n the no. of square numbers in the array=%d",c1);
+	printf("\n the no. of cube numbers in the array=%d",c2);
+	getch();
+}
+......................................................................................................................................................
+/*16)	Write a program to input any 50 numbers in an array and find the biggest number.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,biggest;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	//code to find biggest number
+	biggest=num[0];
+	for(i=0;i<50;i++)
+	{
+		if(num[i]>biggest)
+		{
+			biggest=num[i];
+		}
+	}
+	printf("\n the biggest number=%d",biggest);
+	getch();
+}
+......................................................................................................................................................
+/*17)	Write a program to input any 50 numbers in an array and find the smallest number.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[50],i,smallest;
+	printf("\nEnter  any 50 numbers ");
+	for(i=0;i<50;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers are ");
+	for(i=0;i<50;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	//code to find smallest number
+	smallest=num[0];
+	for(i=0;i<50;i++)
+	{
+		if(num[i]<smallest)
+		{
+			smallest=num[i];
+		}
+	}
+	printf("\n the smallest number=%d",smallest);
+	getch();
+}
+......................................................................................................................................................
+/*18)	Write a program to input the marks of any 100 students in a subject and find the highest and lowest marks.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int marks[100],i,h,l;
+	printf("\nEnter  marks of 100 students ");
+	for(i=0;i<100;i++)
+	{
+		scanf("%d",&marks[i]);
+	}
+	printf("\n The marks are ");
+	for(i=0;i<100;i++)
+	{
+		printf("%d ",marks[i]);
+	}
+	//code to find highest marks
+	h=marks[0];
+	for(i=0;i<50;i++)
+	{
+		if(marks[i]>h)
+		{
+			h=marks[i];
+		}
+	}
+	//code to find lowest marks
+	l=marks[0];
+	for(i=0;i<50;i++)
+	{
+		if(marks[i]<l)
+		{
+			l=marks[i];
+		}
+	}
+	printf("\n the biggest marks=%d",h);
+	printf("\n the lowest marks=%d",l);
+	getch();
+}
+......................................................................................................................................................
+/*19)	Write a program to input the age of any 100 students and find the oldest age.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int age[100],i,oldage;
+	printf("\nEnter the age of 100 students ");
+	for(i=0;i<100;i++)
+	{
+		scanf("%d",&age[i]);
+	}
+	printf("\n The age of 100 students  ");
+	for(i=0;i<100;i++)
+	{
+		printf("%d ",age[i]);
+	}
+	oldage=age[0];
+	for(i=0;i<100;i++)
+	{
+		if(age[i]>oldage)
+		{
+			oldage=age[i];
+		}
+	}
+	printf("\n The oldest age=%d",oldage);
+	getch();
+}
+......................................................................................................................................................
+/*20)	Write a program to input any 10 numbers in an array and sort them in descending order.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int num[10],i,j,t;
+	printf("\nEnter any 10 numbers ");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers before sorting are ");
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	//code to sort
+	for(i=0;i<10;i++)
+	{
+		for(j=0;j<9;j++)
+		{
+			if(num[j]<num[j+1])
+			{
+				t=num[j];
+				num[j]=num[j+1];
+				num[j+1]=t;
+			}
+		}
+	}
+	printf("\n The numbers after sorting are ");
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	getch();
+}
+......................................................................................................................................................
+/*21)	Write a program to input the marks of ‘n’ numbers of students and sort them in ascending order.*/
+#include<stdio.h>
+#include<conio.h>
+#define N 1000
+main()
+{
+	int num[N],i,j,t,n;
+	printf("Enter the value of 'n' ");
+	scanf("%d",&n);
+	printf("\nEnter any n numbers ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&num[i]);
+	}
+	printf("\n The numbers before sorting are ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	//code to sort
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-1;j++)
+		{
+			if(num[j]>num[j+1])
+			{
+				t=num[j];
+				num[j]=num[j+1];
+				num[j+1]=t;
+			}
+		}
+	}
+	printf("\n The numbers in ascending order are ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	getch();
+}
+
+......................................................................................................................................................
+/*22)	Write a program to input the height of ‘n’ numbers in an array and display the height in shortest to tallest form.*/
+#include<stdio.h>
+#include<conio.h>
+#define N 1000
+main()
+{
+	int height[N],i,j,t,n;
+	printf("Enter the value of 'n' ");
+	scanf("%d",&n);
+	printf("\nEnter the height of n students ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&height[i]);
+	}
+	printf("\n The height of the students before sorting are ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",height[i]);
+	}
+	//code to sort
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-1;j++)
+		{
+			if(height[j]<height[j+1])
+			{
+				t=height[j];
+				height[j]=height[j+1];
+				height[j+1]=t;
+			}
+		}
+	}
+	printf("\n The height of the students from shortest to tallest form ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",height[i]);
+	}
+	getch();
+}
+
+......................................................................................................................................................
+/*23)	Write a program to input mobile number of any 50 students in a class.
+ Then, ask the user to input a mobile number and find it is in the contact list or not.*/
+ #include<stdio.h>
+ #include<conio.h>
+ #include<string.h>
+ main()
+ {
+	char mobileno[50][10],srchmobile[10],result;
+	int i;
+	printf("Enter the mobile no. of any 50 students ");
+	for(i=0;i<50;i++)
+	{
+		gets(mobileno[i]);
+	}
+	printf("Enter the mobile no. which you want to search ");
+	gets(srchmobile);
+	//code to search
+	for(i=0;i<50;i++)
+	{
+		if(strcmpi(srchmobile,mobileno[i])==0)
+		{
+			result='y';
+			break;
+		}
+	}
+	if(result=='y')
+	{
+		printf("\n Yes, the mobile no. which you are searching is in the list ");
+	}
+	else
+	{
+		printf("\n No, the mobile no. which you are searching is not in the list ");
+	}
+	getch();
+	return(0);
+}
+
+......................................................................................................................................................
+/*24)	A college published the entrance result of the successful candidates for the admission in BBA. The symbol no. of the successful candidates are as follows:
+12001		12005		12009		12104		12204		12250
+12305		12555		12560		12570		12600		12601
+Now, make a program to input a symbol no. and your program should find the given symbol no. is in the list or not.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int sn[]={12001,12005,12009,12104,12204,12250,12305,12555,12560,12570,12600,12601};
+	int i,x;
+	char found;
+	printf("\n The list of successful candidates are ");
+	for(i=0;i<12;i++)
+	{
+		printf("\n %d",sn[i]);
+	}
+	printf("\nEnter the symbol no. which you wnat to search ");
+	scanf("%d",&x);
+	//code to search
+	for(i=0;i<12;i++)
+	{
+		if(x==sn[i])
+		{
+			found=1;
+			break;
+		}
+	}
+	if(found==1)
+	{
+		printf("\n Yes, the symbol no. %d is in the list of successful students ",x);
+	}
+	else
+	{
+		printf("\n No, the symbol no. %d is not in the list of successful students ",x);
+	}
+	getch();
+}
+......................................................................................................................................................
+/*25)	Write a program to store the following matrix and display it properly.
+4	8	-2
+3	4	0
+*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int m[2][3]={{4,8,-2},{3,4,0}};
+	int r,c;
+	printf("The required matrix is ");
+	printf("\n");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m[r][c]);
+		}
+		printf("\n");
+	}
+	getch();
+}
+......................................................................................................................................................
+/*26)	Write a program to input a 2*3 matrix and display it properly.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int m[2][3],r,c;
+	printf("Enter the elements of the matrix ");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			scanf("%d",&m[r][c]);
+		}
+	}
+	printf("The required matrix is ");
+	printf("\n");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m[r][c]);
+		}
+		printf("\n");
+	}
+	getch();
+}
+......................................................................................................................................................
+/*27)	Write a program to input any two matrices of 3*4 size and find their sum.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int m1[3][4],m2[3][4],m3[3][4],r,c;
+	printf("Enter the elements of the first matrix ");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			scanf("%d",&m1[r][c]);
+		}
+	}
+	printf("Enter the elements of the second matrix ");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			scanf("%d",&m2[r][c]);
+		}
+	}
+	printf("The first matrix  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			printf("%d\t",m1[r][c]);
+		}
+		printf("\n");
+	}
+	printf("The second matrix  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			printf("%d\t",m2[r][c]);
+		}
+		printf("\n");
+	}
+	//code to add matrices
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			m3[r][c]=m1[r][c]+m2[r][c];
+		}
+	}
+	printf("The sum of two matrices  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<4;c++)
+		{
+			printf("%d\t",m3[r][c]);
+		}
+		printf("\n");
+	}
+	getch();
+}
+......................................................................................................................................................
+/*28)	Write a program to input any two matrices of 2*3 size and find their difference.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int m1[2][3],m2[2][3],m3[2][3],r,c;
+	printf("Enter the elements of the first matrix ");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			scanf("%d",&m1[r][c]);
+		}
+	}
+	printf("Enter the elements of the second matrix ");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			scanf("%d",&m2[r][c]);
+		}
+	}
+	printf("The first matrix  is ");
+	printf("\n");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m1[r][c]);
+		}
+		printf("\n");
+	}
+	printf("The second matrix  is ");
+	printf("\n");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m2[r][c]);
+		}
+		printf("\n");
+	}
+	//code to find difference of the  matrices
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			m3[r][c]=m1[r][c]-m2[r][c];
+		}
+	}
+	printf("The difference of two matrices  is ");
+	printf("\n");
+	for(r=0;r<2;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m3[r][c]);
+		}
+		printf("\n");
+	}
+	getch();
+}
+......................................................................................................................................................
+/*29)	Write a program to input any two matrices of 3*3 sizes and find their product.*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int m1[3][3],m2[3][3],m3[3][3],r,c,i,s;
+	printf("Enter the elements of the first matrix ");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			scanf("%d",&m1[r][c]);
+		}
+	}
+	printf("Enter the elements of the second matrix ");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			scanf("%d",&m2[r][c]);
+		}
+	}
+	printf("The first matrix  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m1[r][c]);
+		}
+		printf("\n");
+	}
+	printf("The second matrix  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m2[r][c]);
+		}
+		printf("\n");
+	}
+	//code to multply matrices
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			s=0;
+			for(i=0;i<3;i++)
+			{
+				s=s+m1[r][i]*m2[i][c];
+			}
+			m3[r][c]=s;
+      }
+	}
+	printf("The product of two matrices  is ");
+	printf("\n");
+	for(r=0;r<3;r++)
+	{
+		for(c=0;c<3;c++)
+		{
+			printf("%d\t",m3[r][c]);
+		}
+		printf("\n");
+	}
+	getch();
+}
+
+......................................................................................................................................................
+/*30)	Write a program to display the following menu and prompt the user to input his/her choice and do the task accordingly in 
+two matrices of 2*2 size.
+1.	Sum of the matrices
+2.	Difference of the matrices
+3.	Product of the matrices
+4.	Quit
+*/
+#include<stdio.h>
+#include<conio.h>
+#include<process.h>
+main()
+{
+	int m1[2][2],m2[2][2],m3[2][2],r,c,ch,s,i;
+	printf("***********MENU ***********");
+	printf("\n1.Sum of the matrices");
+	printf("\n2.Difference of the matrices");
+	printf("\n3.Product of the matrices");
+	printf("\n4.Quit");
+	printf("\n\nEnter your choice ");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+		case 1:
+			printf("Enter the elements of the first matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m1[r][c]);
+				}
+			}
+			printf("Enter the elements of the second matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m2[r][c]);
+				}
+			}
+			printf("The first matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m1[r][c]);
+				}
+				printf("\n");
+			}
+			printf("The second matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m2[r][c]);
+				}
+				printf("\n");
+			}
+			//code to find sum
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					m3[r][c]=m1[r][c]+m2[r][c];
+				}
+			}
+			printf("The sum  of two matrices  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m3[r][c]);
+				}
+				printf("\n");
+			}
+			break;
+	case 2:
+			printf("Enter the elements of the first matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m1[r][c]);
+				}
+			}
+			printf("Enter the elements of the second matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m2[r][c]);
+				}
+			}
+			printf("The first matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m1[r][c]);
+				}
+				printf("\n");
+			}
+			printf("The second matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m2[r][c]);
+				}
+				printf("\n");
+			}
+			//code to find difference
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					m3[r][c]=m1[r][c]-m2[r][c];
+				}
+			}
+			printf("The difference  of two matrices  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m3[r][c]);
+				}
+				printf("\n");
+			}
+			break;
+	case 3:
+			printf("Enter the elements of the first matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m1[r][c]);
+				}
+			}
+			printf("Enter the elements of the second matrix ");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					scanf("%d",&m2[r][c]);
+				}
+			}
+			printf("The first matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m1[r][c]);
+				}
+				printf("\n");
+			}
+			printf("The second matrix  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m2[r][c]);
+				}
+				printf("\n");
+			}
+			//code to find product
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					s=0;
+					for(i=0;i<2;i++)
+					{
+						s=s+m1[r][i]*m2[i][c];
+					}
+					m3[r][c]=s;
+				}
+			}
+			printf("The product  of two matrices  is ");
+			printf("\n");
+			for(r=0;r<2;r++)
+			{
+				for(c=0;c<2;c++)
+				{
+					printf("%d\t",m3[r][c]);
+				}
+				printf("\n");
+			}
+			break;
+		case 4:
+			exit(0);
+		default:
+			printf("\n your choice is invalid ");
+			printf("\n Please, enter your choice between 1 to 4 ");
+	}
+	getch();
+}
+
+......................................................................................................................................................

@@ -1,0 +1,10 @@
+1.
+scp poudel@helios.phy.ohiou.edu:/MDM/CLASS/Sol(hit tab)
+file is copied to /home/bhishan/
+
+2. sudo su
+3. cd /opt
+4. tar -xvf /home/bhishan/Sol(hit tab)(hit enter)
+5. cd /usr/local/bin
+6. ln -s /opt/Sol.../sol.../bin/* .
+

@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Care in evaluating functions}{2}{section.1}
+\contentsline {section}{\numberline {2}Continued Fractions}{5}{section.2}
+\contentsline {section}{\numberline {3}Bessel-functions via Recursion}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}• part a}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}• part b}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}• part c}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}• part d}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}• part e}{7}{subsection.3.5}

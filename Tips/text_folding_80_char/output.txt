@@ -1,0 +1,55 @@
+> When astronomers observe the sky they can only detect the objects which are 
+> either bright enough to detect (e.g., stars) 
+> or large objects that block background light (e.g., clouds of gas and dust). 
+> But the universe is made up of both visible and
+> invisible mass objects. Sufficiently bright objects can be observed using 
+> optical telescope, but how can we observe the
+> objects that emit very low or not at all light? Gravitational microlensing is 
+> one of the possible answer to that.
+> Microlensing is the phenomenon in which if a massive object (of size such as 
+> of the star ) lies in between 
+> bright source and the observer such that the observer can see multiple images 
+> of the source owing to the lensing effect of that
+> massive object that lies between source and the observer. 
+> 
+> Since microlensing observations do not rely on radiation received from the 
+> lens 
+> object, this effect therefore allows astronomers to study massive objects no 
+> matter how faint. It is thus an ideal technique to study the galactic 
+> population 
+> of such faint or dark objects as brown dwarfs, red dwarfs, planets, white 
+> dwarfs, neutron stars, black holes, and massive compact halo objects. 
+> Moreover, 
+> the microlensing effect is wavelength-independent, allowing study of source 
+> objects that emit any kind of electromagnetic radiation.
+> 
+> This is a very small effect and the angular separation of the images
+> are below the resolving power of contemporary optical telescopes. Also, the 
+> typical objects that cause gravitational microlensing are Jupiter-size 
+> objects, white dwarfs, and black holes which constitute 
+> a category called as \textit{massive compact halo objects} (MACHOs).
+> 
+> Now, consider that we are studying a halo object (let's say a star in Large 
+> Magellanic Cloud). Over the period of time when the MACHO object 
+> come in between the line of sight of the source star and observer, we can 
+> observe  brightness of the star as the 
+> lensing object MACHO comes near and far to the line of sight. Then we can 
+> plot the function for the  brightness versus time (also called 
+> light curve) for that particular star. The plot shows that the brightness of 
+> the star increases and decreases as the lensing object
+> MACHO comes near and far to the line of sight. A typical example of light 
+> curve is shown in figure (\ref{fig:light_curve}).
+> Thus, from this we can say that it is possible to study the variation in 
+> brightness of the distant star even though the angular 
+> deflection of the light is far below the resolving power of contemporary 
+> optical telescopes.
+> 
+> The time it takes for a MACHO to move an angular distance equal to Einstein 
+> angle $\theta_E$ is called the characteristic timescale for the variation 
+> $t_{var}$. This characteristic time  depends on the 
+> mass of the lensing object and the relative velocity between lens and the 
+> source. \\ The typical value of characteristic time is calculated as:\\
+> Einstein angle ~~~~~~~~~~~~~~~~~~~~~~~~: $\theta_E \sim 10^{-3''}$.\\
+> Distance from observer to lens ~~: $D_L \sim 10 ~kpc$ . \\
+> Estimated velocity~~~~~~~~~~~~~~~~~~~: $V \sim 200 ~km/s$. \\
+> Then the time for variation is \\

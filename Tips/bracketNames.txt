@@ -1,0 +1,4 @@
+brackets { } ‑ also called braces, curly brackets, or curly braces.
+parens ( ) ‑ also called parentheses, brackets, round brackets, circle brackets, or soft brackets.
+block parens [ ] ‑ also called brackets, square brackets, closed brackets, or hard brackets.
+angle brackets < > ‑ also called brackets, pointy brackets, triangular brackets, diamond brackets, tuples, or chevrons.

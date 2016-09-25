@@ -1,0 +1,6 @@
+# removing leading spaces in a file
+
+sed "s/^[ \t]*//" -i filename
+
+sed "s/^[ \t]*//" -i changethis.txt
+

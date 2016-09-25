@@ -1,0 +1,19 @@
+bhishan tips
+============
+codeblocks for ubuntu 64 bit
+
+note:
+this is unnecessary.
+it cannot compile fortran 90 and python files
+for c/c++ file opens separate run window( gedit is better)
+
+
+to remove it:
+==========
+go to software center and uninstall it
+
+to install it:
+===============
+sudo apt-get update
+
+sudo apt-get install codeblocks

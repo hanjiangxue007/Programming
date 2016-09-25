@@ -1,0 +1,6 @@
+to resize mozilla browser
+===========================
+
+1. right click top of mozilla
+2. click move
+3. then resize

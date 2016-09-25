@@ -1,0 +1,18 @@
+# Author : Bhishan Poudel
+# Date   : Sep 23, 2016
+
+1. download and untar the file inside ~/Programs from
+https://www.open-mpi.org/software/ompi/v2.0/
+
+
+2. follow README
+sudo -H ./configure
+sudo -H make all install
+
+
+3. While running a c program I got error:
+mpicc: error while loading shared libraries: libopen-pal.so.20: cannot
+open shared object file: No such file or directory
+
+Solution:
+sudo ldconfig

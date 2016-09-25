@@ -1,0 +1,54 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 08, 2016
+# Ref       : http://www.shakthimaan.com/posts/2014/11/27/gnu-parallel/news.html
+
+
+examples:
+parallel echo ::: alpha beta gamma
+parallel echo ::: 0 1 ::: 0 1        # 0 0 line upto 11
+parallel echo {} ::: /tmp            # /tmp
+parallel echo {/} ::: /tmp/stdio.h   # stdio.h
+parallel echo {//} ::: /tmp/stdio.h  # /tmp
+parallel echo {.} ::: /tmp/stdio.h   # /tmp/stdio
+
+
+parallel sleep {}\; echo {} ::: 5 2 1 4 3  # may not be in order
+parallel -k sleep {}\; echo {} ::: 5 2 1 4 3 # in order
+
+
+# run 10 times
+seq 10 | parallel -n0 echo "Hello, World"
+
+# dry run
+parallel --dry-run -k sleep {}\; echo {} ::: 5 2 1 4 
+
+# estimated time
+parallel --eta -k sleep {}\; echo {} ::: 5 2 1 4 3
+
+
+# compressing many log files
+parallel gzip ::: *.log
+parallel gunzip ::: *.gz
+
+# convert image size
+convert -resize 512x384 file.jpg file_web.jpg
+
+# parallize the task
+find . -name '*.jpg' | parallel convert -resize 512x384 {} {}_web.jpg
+
+# the size of all the texts
+ls *.txt | parallel "ls -lh {}" | cut -d' ' -f 5
+
+# number of cpu and cores
+parallel --number-of-cpus
+parallel --number-of-cores
+
+# The ’-j’ option specifies the number of jobs to be run in
+# parallel. If the value 0 is given, GNU Parallel will try to 
+# start as many jobs as possible. The ‘+ N’ option with ’-j’ 
+# adds N jobs to the CPU cores. For example:
+
+find . -type f -print | parallel -j+2 ls -l {}
+
+
+

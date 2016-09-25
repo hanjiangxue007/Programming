@@ -1,0 +1,27 @@
+bhishan tips:
+how to set a path using cdpath in linux
+=================================
+description:
+CDPATH is an environment variable. It looks exactly like the PATH variable 
+containing with many different paths concatenated using ':'.
+==============================================================================
+1. go to home, view hidden files(ctrl h)
+2. edit the .profile 
+3. add this snippet to it.
+
+#############################################################################
+# bhishan cdpath
+# to source cdpath type: source $HOME/.profile 
+#                        (restart computer)
+# type echo $CDPATH to see all the cdpath
+# to check: cd array ( will take to that directorie inside cprograms)
+
+# my cdpath directories 
+# 1. home/bhishan
+# 2. home/bhishan/Copy
+# 3. home/bhishan/Copy/Programming/C/cprograms
+# 4. home/bhishan/Copy/Programming/Python
+
+export CDPATH=".:/home/bhishan/:/home/bhishan/Copy:/home/bhishan/Copy/Programming/C/cprograms:/home/bhishan/Copy/Programming/Python"
+
+################################################################################

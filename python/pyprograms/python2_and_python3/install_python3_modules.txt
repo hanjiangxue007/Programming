@@ -1,0 +1,56 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 27, 2016
+
+
+to install modules for python3
+===============================
+
+sudo su
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install string
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install numpy
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install scipy
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install astropy
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install pyfits
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install pandas
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install matplotlib
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install pylab
+
+
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install StringIO
+# inbuilt inside io, use:   from io import StringIO
+/Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install fileinput # inbuilt
+
+
+pip3 install numpy; pip3 install matplotlib;  pip3 install pyfits;  pip3 install pandas; pip3 install scipy
+
+
+##=============================================================================
+StringIO provides a convenient means of working with text in memory using the
+file API (read, write. etc.). There are two separate implementations.
+The cStringIO version is written in C for speed, while StringIO is written in
+Python for portability. Using cStringIO to build large strings can offer
+performance savings over some other string conctatenation techniques.
+
+
+# checking
+#==============================================================================
+python3 -c 'import matplotlib; print(matplotlib.__version__, matplotlib.__file__)'
+
+which python3
+
+
+
+
+
+note for python3 StringIO
+===========================
+From What’s New In Python 3.0:
+
+The StringIO and cStringIO modules are gone. Instead, import the io module
+and use io.StringIO or io.BytesIO for text and data respectively.
+
+this works for both:
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO

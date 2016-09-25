@@ -1,0 +1,26 @@
+# Author  : Bhishan Poudel
+# Date    : May 18, 2016
+# Ref     : http://www.shellhacks.com/en/Add-Character-to-the-Beginning-or-to-the-End-of-Each-Line-using-AWK-and-SED
+
+add_characters_to_each_lines
+===============================================================================
+touch file
+open file
+
+
+# add characters at the beginning of each line using AWK
+awk '{print "add_to_beginning"$0}' file
+# add characters at the beginning of each line using SED
+sed 's/^/add_to_beginning/' file
+
+ awk '{print "# "$0}' file > file1; open file1
+ sed 's/^/#/' file > file1; open file1
+
+===============================================================================
+# add characters at the end of each line using AWK
+awk '{print $0"append_to_end"}' file
+# add characters at the end of each line using SED
+sed 's/$/append_to_end/' file
+
+awk '{print $0";"}' file > file1; open file1
+sed 's/$/;;/' file > file1; open file1

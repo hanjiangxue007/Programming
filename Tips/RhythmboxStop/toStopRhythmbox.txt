@@ -1,0 +1,16 @@
+Bhishan Poudel
+Nov 3, 2015
+
+to stop rhythmbox playing music
+====================================
+
+first check which programs are running : top
+
+then kill rhythmbox : killall rhythmbox
+
+
+aliter
+========
+(to ignore the case -I)
+
+killall -I rhythmbox

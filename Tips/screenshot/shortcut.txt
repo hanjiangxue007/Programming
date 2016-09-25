@@ -1,0 +1,31 @@
+terminal commands to screenshot
+===============================
+gnome-screenshot          whole screen 
+gnome-screenshot -w       current window
+gnome-screenshot -w -b    include window border
+gnome-screenshot -w -B    exclude window border
+gnome-screenshot -w -d 2  delay 2 seconds
+gnome-screenshot -a       some area only 
+
+
+terminal using imagemagic
+=============================
+a) whole screen 
+import -window root Pictures/Image5.png 245.9 kB
+import -window root Pictures/Image5.png size  6.4 MB
+import calc.png  # takes image of window where cross of mouse is 
+import -frame Image6.png # only some frame
+import -window root -resize 640 -pause 1 Pictures/Image7.eps (size 1.4 Mb)
+
+
+
+keyboard shortcuts to screenshot
+================================
+take snapshot
+fn prtsc
+
+screenshot window
+alt fn prtsc
+
+selected snapshot
+shf fn prtsc

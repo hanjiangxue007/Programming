@@ -1,0 +1,4 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 08, 2016
+
+parallel ::: "python a.py" "python b.py" "echo hello" "touch junk1 junk2" "ls"

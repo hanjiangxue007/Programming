@@ -1,0 +1,47 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 08, 2016
+# Ref       : https://www.airpair.com/python/posts/top-mistakes-python-big-data-analytics
+
+
+in IPython use cythonmagic to increase speed
+==========================================
+
+1. to install
+pip install cython
+pip3 install cython
+
+2. to use
+ipython # opens ipython console in terminal
+
+copy this:
+def sum_uncythonized():
+    a = 0
+    for i in range(100000):
+        a += i
+    return a
+    
+    
+Then, in ipython cosole type:
+%paste     # it will be pasted itself
+
+
+also, copy and paste this:
+%load_ext cythonmagic
+%%cython
+def sum_cythonized():
+    cdef long a = 0 # this directive defines a type for the variable
+    cdef int i = 0
+    for i in range(100000):
+        a += i
+    return a
+    
+# Then, timeit them
+%timeit sum_cythonized()
+# 10000 loops, best of 3: 80.4 µs per loop
+ 
+%timeit sum_uncythonized()
+# 100 loops, best of 3: 7.76 ms per loop
+
+AWESOME 11 TIMES FASTER!
+
+

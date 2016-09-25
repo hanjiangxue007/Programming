@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: using_natlib.aux
+The style file: plainnat.bst
+Database file #1: using_natlib.bib
+Warning--entry type for "Doe:2009:Other" isn't style-file defined
+--line 17 of file using_natlib.bib
+Warning--I didn't find a database entry for ""
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            608 strings with 5178 characters,
+and the built_in function-call counts, 954 in all, are:
+= -- 80
+> -- 30
+< -- 3
++ -- 13
+- -- 9
+* -- 58
+:= -- 154
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 11
+chr.to.int$ -- 2
+cite$ -- 6
+duplicate$ -- 50
+empty$ -- 97
+format.name$ -- 12
+if$ -- 196
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 25
+num.names$ -- 12
+pop$ -- 34
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 36
+stack$ -- 0
+substring$ -- 6
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 47
+(There were 2 warnings)

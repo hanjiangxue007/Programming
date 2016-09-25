@@ -1,0 +1,17 @@
+ref: http://forums.mozillazine.org/viewtopic.php?p=6333845
+
+
+
+It IS completely possible to do that with Firefox itself.
+I know it is too late considering the last post on this thread, but I want to share the solution with other people who might have this problem.
+
+1- you have two files on the destination folder. One with the original name and one with an extra ".PART" extension. Move both of these files to some other folder (Move! not copy)
+
+2- Start your download again from the beginning (you have access to the download link, don't you?)
+
+3- Let it download a few bytes, just to have those two files created again, with the exact same name. Now PAUSE this download.
+
+4- Go to the folder where you backed up those old files. Copy both of these files to your download folder and replace the new created files when asked.
+
+5- Now go to Firefox's Downloads form and resume the download.
+

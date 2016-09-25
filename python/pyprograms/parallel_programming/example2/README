@@ -1,0 +1,16 @@
+Hi, I am trying to learn multi-core programming in python.
+
+This repository will hold all the tutorials starting from basics. 
+
+If some one interested in learning them just follow and find
+some tutrials that better teach you these programs.
+
+I might try to add the source urls and the text books that 
+better teach parallel programming techniques in python.
+
+I might also try to put up some information regarding the
+python libraries that can be used for multi-core programming.
+
+For now (on or before 14-02-2014) take it for granted that 
+the best multi-core processing library is "multiprocessing"
+A process based threading interface.
