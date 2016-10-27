@@ -1,0 +1,8 @@
+# Author : Bhishan Poudel
+# Date   : Oct-10-2016 Mon
+
+
+convert -rotate 90 -compress jpeg -quality 75  *.jpg output.pdf
+
+
+convert -quality 50 image1.jpeg image2.jpeg image3.jpeg outputFileName.pdf

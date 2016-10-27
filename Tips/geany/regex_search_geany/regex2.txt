@@ -1,0 +1,16 @@
+# Author : Bhishan Poudel
+# Date   : Oct-21-2016 Fri
+
+
+An example phrase.
+# place this inside html notation
+search:
+\<([^ ]*)\>
+
+replace with:
+<i>\1</i>
+
+or, <i>&</i>
+
+
+An example phrase.

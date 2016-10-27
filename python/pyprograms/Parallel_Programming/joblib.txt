@@ -1,4 +1,0 @@
-http://packages.ubuntu.com/precise/all/python-joblib/download
-
-
-choose open with application manager when downloading

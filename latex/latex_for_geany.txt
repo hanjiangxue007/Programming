@@ -5,4 +5,12 @@
 ===============================================================================
 Build > Set Build Commands > Execute Commands
 
-Execute : latex %f; dvipdfmx %e.dvi; rm %e.aux; rm %e.dvi; rm %e.log; okular %e.pdf
+# use latex command for .ps files
+Build: latex %e.tex; dvipdf %e.dvi; rm -r %e.aux ; rm -r %e.log; rm -r %e.dvi; rm -r *.bak; rm -f %e.bbl ; rm -f e.blg; rm -f %e.out; xdg-open a.pdf
+
+
+# use pdflatex for .eps .png files
+Execute : pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm -f  %e.aux; rm -f %e.bbl; rm -f %e.blg; rm -f  %e.log; rm -f %e.out ; rm -f  *.bak && xdg-open %e.pdf
+
+
+pdflatex a.tex; bibtex a; pdflatex a.tex; pdflatex a.tex; rm -f a.aux; rm -f a.bbl; rm -f a.blg; rm -f a.log; rm -f a.out; rm -f *.bak && xdg-open a.pdf

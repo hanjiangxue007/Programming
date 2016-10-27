@@ -1,0 +1,30 @@
+% Autho     : Bhishan Poudel
+% Date      : Apr 19, 2016
+% Ref       : https://en.wikipedia.org/wiki/BibTeX
+% Texmaker  : Preference > Quick build > choose option with bibtex
+
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{url}
+
+\begin{document}
+
+\title{Testing bibtex in Texmaker}
+\maketitle
+
+\section{Introduction}
+
+Refer to  \cite{plazas2012}.
+Refer to \cite{abramowitz+stegun}.
+Refer to \cite{voigt2012}
+
+\bibliographystyle{plain}
+\bibliography{main,main2,voigt}
+%\bibliography{bibliography_1,bibliography_2,bibliography_3}
+
+\end{document}

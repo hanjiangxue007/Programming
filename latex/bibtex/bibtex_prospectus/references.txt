@@ -1,0 +1,50 @@
+\begin{thebibliography}{widestlabel}
+\bibitem [Voigt et al.(2012)] {Voi012}  L.M.Voigt,S.L.Bridle,A.Amara,M.Cropper,T.D.Kitching,R.Massey,J.Rhodes,and T. Schrabback 2012
+\textit{Astron.Soc.421,1385-1398}.
+The impact of galaxy colour gradient on cosmic shear mesuarement
+
+\bibitem[Cypriano et al,2010]{Cy10}
+E.S. Cypriano,A.Amara,L.M.Voigt,S.L.Bridle,F.B.Abdalla,A.Refregier,M.Seiffert,J.Rhodes 2010
+\textit{R.Astro.Soc.000,000-000(0000)}
+Cosmic shear requirements on the wavelength dependence of telescope point spread function
+
+%\bibitem{Meyers and Burchat,2015}
+\bibitem[Meyers and Burchat,2015]{mb15}
+Joshua E. Meyers and Patricia Burchat
+\textit{Impact of Atmospheric and Chromatic Effect on Weak Lesning Measurements}
+The astrophysical Journal,807-182 2015 July 10
+
+\bibitem[Blanford et al,1991]{bl91}
+R.D.Blanford,A.B.Saust,T.G.Brainerd and J.V.Villumsen 1991
+\textit{The Distortion of distant galaxy images by large scale structure}
+R.Astron.Soc(1991) 251,600-627
+
+\bibitem[Bonnet And Miller,1995]{bm95}
+H. Bonnet and Y. Miller 1995
+\textit{Statistical Analysis of Weak Gravitational Shear in the extended periphery of rich galaxy clusters}
+Astron.Astrophys.303,331-344(1995)
+
+\bibitem[Lupino and Kaiser 1997]{lk97}
+G.A.Lupino and Nick Kaiser 1997
+\textit{Detection of weak lensing by a cluster of galaxies at z=0.83}
+The Astrophysical Journal,475;20-28, 1997 January 20
+
+
+\bibitem[Schneider and Seitz 1995]{sn95}
+Peter Schneider and Caroline Seitz 1995
+\textit{Steps Towards nonlinear cluster inversion through gravitational distortions}
+Astron.Astrophys. 294,411-431(1995)
+
+\bibitem[Sneider, Kochanek and Wambsganss 2010]{sasfee10}
+P. Sneider,C. Kochanek,J.Wambsganss
+\textit{Gravitational Lensing Strong,Weak and Micro}
+Astron.Astrophys. 294,411
+
+
+\bibitem[Rebecca Santana 2010]{rs10}
+Rebecca Santana
+\textit{Galaxy Shape Mesurement Using Fourier Domain Null Testing Method}
+Astron. Astropys
+
+
+\end{thebibliography}

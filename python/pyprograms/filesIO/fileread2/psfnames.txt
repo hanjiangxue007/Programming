@@ -1,3 +1,0 @@
-psf1.fits 2
-psf2.fits 3
-psf3.fits 5.0

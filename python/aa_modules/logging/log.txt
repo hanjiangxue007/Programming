@@ -1,4 +1,0 @@
-ERROR:root:The washing machine is leaking!
-CRITICAL:root:The house is on fire!
-WARNING:root:We're almost out of milk.
-INFO:root:It's sunny today.

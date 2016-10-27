@@ -1,3 +1,0 @@
-This works good, prints all the output to both console and to a file
-This does not print output to file in case of syntax errors
-This does not print output of subprocess.call

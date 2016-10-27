@@ -1,4 +1,0 @@
-# Author    : Bhishan Poudel
-# Date      : Aug 30, 2016
-
-1. "Why do programmers confuse Christmas and Halloween" - "Because dec(25) is oct(31)" 

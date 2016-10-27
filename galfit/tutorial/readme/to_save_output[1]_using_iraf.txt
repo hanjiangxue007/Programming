@@ -1,0 +1,1 @@
+imcopy subcomps[1] one.fits         this will create first frame.

@@ -1,1 +1,0 @@
-/Users/poudel/Copy/Programming/Python/pyprograms/filesIO/fileread

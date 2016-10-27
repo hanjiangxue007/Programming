@@ -6,7 +6,7 @@ To run latex in geany with bibtex references
 
 Build > Set Build commands >
 
-Execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm %e.aux; rm %e.bbl; rm %e.blg; rm %e.log; rm %e.out; xdg-open %e.pdf
+Execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm -f %e.aux ; rm -f %e.bbl ; rm -f %e.blg ; rm -f %e.log ; rm -f %e.out ; rm -f *.bak ; rm -r %e.dvi ; rm -r %e.toc; rm -r %e.lof; rm -r %e.lot; find . -name *eps-converted* -type f -exec rm -r {} + ; xdg-open %e.pdf
 
 View pdf : xdg-open %e.pdf
 
@@ -16,3 +16,7 @@ For mac:
 Execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm %e.aux; rm %e.bbl; rm %e.blg; rm %e.log; rm %e.out; open %e.pdf
 
 View pdf : open %e.pdf
+
+
+##======================================================================
+(latex -interaction nonstopmode -halt-on-error -file-line-error %e.tex && dvipdf %e.dvi; bibtex %e ; latex -interaction nonstopmode -halt-on-error -file-line-error %e.tex ; latex -interaction nonstopmode -halt-on-error -file-line-error %e.tex ) || (pdflatex %e.tex ; bibtex %e ; pdflatex %e.tex ; pdflatex %e.tex ); rm -f %e.aux ; rm -f %e.bbl ; rm -f %e.blg ; rm -f %e.log ; rm -f %e.out ; rm -f *.bak ; rm -r %e.dvi ; rm -r %e.toc; rm -r %e.lof; rm -r %e.lot; find . -name *eps-converted* -type f -exec rm -r {} + ; xdg-open %e.pdf

@@ -1,0 +1,27 @@
+# Author : Bhishan Poudel
+# Date   : Oct-21-2016 Fri
+
+# sample text
+1 \stylea{\# Author{\hspace*{1em}}: Bhishan Poudel} \\
+2 \stylea{\# Date{\hspace*{1em}}{\hspace*{1em}}: May 19, 2016} \\
+3 \stylea{} \\
+4 \stylea{Line wrapping in geany} \\
+5 \stylea{===============================================================================} \\
+6 \stylea{edit > preference > editor > features > line wrapping} \\
+7 \stylea{then,} \\
+8 \stylea{document > line wrapping} \\
+\end{document}
+
+# replace \stylea{}  by only text inside them.
+# select, ctrl H, use regular expression, turn off multiline,
+# replace \\stylea{(.*)}  by \1
+
+1 \# Author{\hspace*{1em}}: Bhishan Poudel \\
+2 \# Date{\hspace*{1em}}{\hspace*{1em}}: May 19, 2016 \\
+3  \\
+4 Line wrapping in geany \\
+5 =============================================================================== \\
+6 edit > preference > editor > features > line wrapping \\
+7 then, \\
+8 document > line wrapping \\
+\end{document}

@@ -1,2 +1,0 @@
-this is a.txt
-this is line2

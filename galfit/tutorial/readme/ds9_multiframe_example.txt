@@ -1,0 +1,14 @@
+# Author : Bhishan Poudel
+# Date   : Oct-18-2016 Tue
+
+To open multiframe fitsfile in ds9
+##======================================================================
+1. open fitsfile like this:
+
+ds9 > file > open as > multiple extension cube
+
+
+2. using terminal
+ds9 -multiframe subcomps.fits &
+
+ds9 "imageblock.fits[1]" &  then save using ds9.

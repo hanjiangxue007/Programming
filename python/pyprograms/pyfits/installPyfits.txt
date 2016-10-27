@@ -1,6 +1,0 @@
-to install pyfits in Mac using pip
-===================================
-
-pip is the Python package installer, first install it
-then,
-sudo -H pip install pyfits

@@ -1,0 +1,11 @@
+# Author : Bhishan Poudel
+# Date   : Oct-17-2016 Mon
+
+find . -size +50M
+
+
+./c/cBooks/Plauger (The Standard C Library ).pdf
+./c/cBooks/King (C Programming A Modern Approach 2E ).pdf
+./c/cBooks/O'Reilly (Head First C ).pdf
+./c/cprograms/cfitsio/test_example/in.fits
+./cpp/Deitel ( C++ How to Program 8E).pdf

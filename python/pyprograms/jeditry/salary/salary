@@ -1,6 +1,0 @@
-#---------------------physics settings-----------------------
-salary=5000 		#starting salary
-office="athens/ohio"	#working office
-year ="five"
-#bonuses
-bonus=200		#per meeting

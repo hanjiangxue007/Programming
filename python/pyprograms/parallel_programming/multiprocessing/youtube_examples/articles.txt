@@ -1,4 +1,0 @@
-https://en.wikipedia.org/wiki/Python_(programming_language)
-https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Indentation
-http://sebastianraschka.com/Articles/2014_multiprocessing.html
-https://pythonhosted.org/joblib/parallel.html

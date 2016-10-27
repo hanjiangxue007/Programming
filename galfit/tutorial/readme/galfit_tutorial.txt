@@ -1,0 +1,32 @@
+# Author : Bhishan Poudel
+# Date   : Oct-18-2016 Tue
+
+Using galfit in unix
+##======================================================================
+
+1. to run a input file
+
+galfit input_file_name
+e.g. galfit galfit.feedme
+
+
+2. Outputs:
+galfit.01  # keeps increasing
+fit.log    # keeps appending
+imagblock.fits # from name given in input file
+
+The image data cube has 3 lay-
+ers: blahblah.fits[1], blahblah.fits[2], and blahblah.fits[3].
+The first image is the postage stamp sized region speci-
+fied in Item I (see below). Image [2] is the final model of
+the galaxy in that region. Image [3] is the residual image
+formed by subtracting [2] from [1]. Image [0] is blank.
+The final parameters obtained in the fit are stored in
+the FITS header of image [2]. If you are dumping the
+final parameters into a table using a script, this is an
+easier place to obtain them instead of trying to dissect
+“fit.log.”
+
+ds9 -multiframe imageblock.fits &
+
+

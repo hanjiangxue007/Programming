@@ -1,6 +1,0 @@
-# Version 2.0 - nm, norm@500 to 1, burrows+2006c91.21_T1350_g4.7_f100_solar
-# Wavelength(nm)  Flambda(ergs/cm^s/s/nm)
-300.0 1.53345164121e-32
-300.1 1.53345164121e-32
-300.2 1.53345164121e-32
-300.3 1.53345164121e-32

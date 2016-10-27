@@ -1,0 +1,11 @@
+CC=mpicc
+CFLAGS=-Wall
+DEPS = 
+
+.c.o: 
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+%.out: %.o
+	$(CC) -o $@ $^
+
+all: mandelbrot.out
